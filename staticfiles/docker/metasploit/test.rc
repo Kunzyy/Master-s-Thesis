@@ -1,0 +1,3 @@
+spool search.txt
+search cve:2021 port:443 type:auxiliary
+exit

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Install tools
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Install tools</h1>
+            <p>Here you can install new pentesting tools from Docker Hub</p>
+        </div>
+    </div>
+
+    <form method="post" action="{% url 'install' %}">
+        {% csrf_token %}
+        <input style="width: 50%" type="text" placeholder="Enter a docker image (Avoid spaces for a better search)" name="searchInput" value="">
+        <br><br>
+        <input class="btn btn-secondary" type="submit" value="Search on Docker Hub &raquo;">
+    </form>
+    <br>
+    <hr>
+    <br>
+    {{ resultHtml | safe }}
+{% endblock %}

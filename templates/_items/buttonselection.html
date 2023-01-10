@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<form method="post" type="submit" class="button btn-light" value=""
+
+      <form method="post" action="{% url 'installConfirm' %}">
+        {% csrf_token %}
+        <input style="width: 50%" type="text" placeholder="Enter a docker image (Avoid spaces for a better search)" name="indexImage" value="">
+        <br><br>
+        <input class="btn btn-light" type="submit" value="Search on Docker Hub &raquo;">
+    </form>

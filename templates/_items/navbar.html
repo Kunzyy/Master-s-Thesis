@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Pentesting Toolbox</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault"
+            aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Documentation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Informations and Settings</a>
+            </li>
+            <!--
+            <li class="nav-item">
+                <a class="nav-link" href="{url 'install' %}">Install tools</a>
+            </li>
+            -->
+        </ul>
+        <ul class="navbar-nav mr-right">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'planning' %}">Planning</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'discovery' %}">Discovery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'attack' %}">Attack</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Reporting</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" disabled="disable">|</a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'account' %}">{{ user.username }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'register' %}">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

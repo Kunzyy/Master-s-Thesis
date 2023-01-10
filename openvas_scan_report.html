@@ -1,0 +1,4531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+body {
+  background-color: #FFFFFF;
+  margin: 0px;
+  font: small Verdana, sans-serif;
+  font-size: 12px;
+  color: #1A1A1A;
+}
+
+div.content {
+  width: 98%;
+  align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr.table_head {
+  background-color: #d5d5d5;
+}
+
+.diff {
+  white-space: pre;
+  font-family: monospace;
+}
+
+.diff.at {
+  color: #9932CC;
+}
+
+.diff.plus {
+  color: #006400;
+}
+
+.diff.minus {
+  color: #B22222;
+}
+
+div.footer {
+  text-align: center;
+}
+
+div.note, div.override {
+  padding:4px;
+  margin:3px;
+  margin-bottom:0px;
+  margin-top:0px;
+  border: 1px solid #CCCCCC;
+  border-top: 0px;
+  background-color: #ffff90;
+}
+
+.result_head {
+  padding:4px;
+  margin:3px;
+  margin-bottom:0px;
+  color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-bottom: 0px;
+  background:#d5d5d5;
+}
+
+.result_head.low {
+  background:#539dcb
+}
+
+.result_head.medium {
+  background:#f99f31
+}
+
+.result_head.high {
+  background:#cb1d17
+}
+
+.result_section {
+  padding:4px;
+  margin:3px;
+  margin-bottom:0px;
+  margin-top:0px;
+  border: 1px solid #CCCCCC;
+  border-top: 0px;
+}
+
+.location_float {
+  float: right;
+  text-align:right;
+}
+
+.delta_float {
+  float: left;
+  font-size: 24px;
+  border: 2px;
+  padding-left: 2px;
+  padding-right: 8px;
+  margin:0px;
+}
+
+.full_width {
+  width: 100%;
+}
+
+pre {
+ white-space: pre-wrap;
+ word-wrap: break-word;
+}
+        </style>
+<title>Scan Report</title>
+</head>
+<body><div class="content">
+<h1>Summary</h1>
+<p>
+          This document reports on the results of an automatic security scan.
+          The report first summarises the results found.  Then, for each host,
+          the report describes every issue found.  Please consider the
+          advice given in each description, in order to rectify the issue.
+        </p>
+<p>
+              Vendor security updates are not trusted.
+            </p>
+<p>
+              Overrides are off.  Even when a result has an override, this report uses the actual threat of the result.
+            </p>
+<p>
+              Information on overrides is included in the report.
+            </p>
+<p>
+              Notes are included in the report.
+            </p>
+<p>
+      This report might not show details of all issues that were found.
+      
+        Issues with the threat level "High" are not shown.
+      
+        Issues with the threat level "Medium" are not shown.
+      
+        Issues with the threat level "Low" are not shown.
+      
+        Issues with the threat level "Log" are not shown.
+      
+        Issues with the threat level "Debug" are not shown.
+      
+        Issues with the threat level "False Positive" are not shown.
+      Only results with a minimum QoD of 70 are shown. </p>
+<p>This report contains all 88 results selected by the filtering described above.  Before filtering there were 92 results.</p>
+<p>All dates are displayed using the timezone "Coordinated Universal Time", which is abbreviated "UTC".</p>
+<table>
+<tr>
+<td>Scan started:</td>
+<td><b>Fri Jan 6 12:43:17 2023 UTC</b></td>
+</tr>
+<tr>
+<td>Scan ended:</td>
+<td>Fri Jan 6 13:02:35 2023 UTC</td>
+</tr>
+<tr>
+<td>Task:</td>
+<td>scan</td>
+</tr>
+</table>
+<h2>Host Summary</h2>
+<table width="100%">
+<tr class="table_head">
+<td>Host</td>
+<td>Start</td>
+<td>End</td>
+<td>High</td>
+<td>Medium</td>
+<td>Low</td>
+<td>Log</td>
+<td>False Positive</td>
+</tr>
+<tr>
+<td><a href="#192.168.1.2">192.168.1.2</a></td>
+<td>Jan 6, 12:43:29</td>
+<td>Jan 6, 12:52:16</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>25</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="#192.168.1.1">192.168.1.1 (pfSense.localdomain)</a></td>
+<td>Jan 6, 12:43:29</td>
+<td>Jan 6, 12:53:24</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>16</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="#192.168.1.15">192.168.1.15</a></td>
+<td>Jan 6, 12:43:29</td>
+<td>Jan 6, 12:44:51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="#192.168.1.18">192.168.1.18</a></td>
+<td>Jan 6, 12:43:29</td>
+<td>Jan 6, 12:44:52</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="#192.168.1.4">192.168.1.4</a></td>
+<td>Jan 6, 12:43:29</td>
+<td>Jan 6, 13:02:35</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="#192.168.1.20">192.168.1.20</a></td>
+<td>Jan 6, 12:43:29</td>
+<td>Jan 6, 12:47:47</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>12</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="#192.168.1.5">192.168.1.5</a></td>
+<td>Jan 6, 12:43:29</td>
+<td>Jan 6, 12:49:01</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>9</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Total: 7</td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>7</td>
+<td>4</td>
+<td>74</td>
+<td>0</td>
+</tr>
+</table>
+<h1>Results per Host</h1>
+<h2 id="192.168.1.2">Host 192.168.1.2</h2>
+<table>
+<tr>
+<td>Scanning of this host started at:</td>
+<td>Fri Jan 6 12:43:29 2023 UTC</td>
+</tr>
+<tr>
+<td>Number of results:</td>
+<td>30</td>
+</tr>
+</table>
+<h3>Port Summary for Host 192.168.1.2</h3>
+<table width="100%">
+<tr class="table_head">
+<td>Service (Port)</td>
+<td>Threat Level</td>
+</tr>
+<tr>
+<td>445/tcp</td>
+<td>High</td>
+</tr>
+<tr>
+<td>80/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>3268/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>464/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>53/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>389/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>135/tcp</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>general/CPE-T</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>21/tcp</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>88/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>139/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>636/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/tcp</td>
+<td>Low</td>
+</tr>
+</table>
+<h3>Security Issues for Host 192.168.1.2</h3>
+<div class="result_head medium">
+<div class="location_float">21/tcp</div>
+<b>Medium</b>
+                 (CVSS: 6.4)
+              <div class="full_width">
+            NVT:
+            Anonymous FTP Login Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.900600)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Reports if the remote FTP Server allows anonymous logins.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>It was possible to login to the remote FTP service with the following anonymous account(s):
+
+anonymous:anonymous@example.com
+ftp:anonymous@example.com
+
+Here are the contents of the remote FTP directory listing:
+
+Account "anonymous":
+
+12-07-22  12:05PM       &lt;DIR&gt;          Administrator 
+04-20-21  12:04PM       &lt;DIR&gt;          mmiller 
+09-12-16  12:37PM       &lt;DIR&gt;          Public 
+
+Account "ftp":
+
+12-07-22  12:05PM       &lt;DIR&gt;          Administrator 
+04-20-21  12:04PM       &lt;DIR&gt;          mmiller 
+09-12-16  12:37PM       &lt;DIR&gt;          Public </pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>Based on the files accessible via this anonymous FTP login and the permissions
+  of this account an attacker might be able to:</p>
+<p>  - gain access to sensitive files</p>
+<p>  - upload or delete files.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>If you do not want to share files, you should disable anonymous logins.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>A host that provides an FTP service may additionally provide Anonymous FTP
+  access as well. Under this arrangement, users do not strictly need an account on the host. Instead the user
+  typically enters 'anonymous' or 'ftp' when prompted for username. Although users are commonly asked to send
+  their email address as their password, little to no verification is actually performed on the supplied data.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            Anonymous FTP Login Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.900600)
+              </p>
+<p>
+                  Version used: $Revision: 12030 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-1999-0497</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            CGI Scanning Consolidation
+            (OID: 1.3.6.1.4.1.25623.1.0.111038)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The script consolidates various information for CGI scanning.</p>
+<p>  This information is based on the following scripts / settings:</p>
+<p>  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)</p>
+<p>  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)</p>
+<p>  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)</p>
+<p>  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.11032)</p>
+<p>  - The configured 'cgi_path' within the 'Scanner Preferences' of the scan config in use</p>
+<p>  - The configured 'Enable CGI scanning', 'Enable generic web application scanning' and
+    'Add historic /scripts and /cgi-bin to directories for CGI scanning' within the
+    'Global variable settings' of the scan config in use</p>
+<p>  If you think any of this information is wrong please report it to the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The Hostname/IP "192.168.1.2" was used to access the remote host.
+
+Generic web application scanning is disabled for this host via the "Enable generic web application scanning" option within the "Global variable settings" of the scan config in use.
+
+Requests to this service are done via HTTP/1.1.
+
+This service seems to be NOT able to host PHP scripts.
+
+This service seems to be NOT able to host ASP scripts.
+
+The User-Agent "Mozilla/5.0 [en] (X11, U; OpenVAS-VT 9.0.3)" was used to access the remote host.
+
+Historic /scripts and /cgi-bin are not added to the directories used for CGI scanning. You can enable this again with the "Add historic /scripts and /cgi-bin to directories for CGI scanning" option within the "Global variable settings" of the scan config in use.
+
+The following directories were used for CGI scanning:
+
+http://192.168.1.2/
+
+While this is not, in and of itself, a bug, you should manually inspect these directories to ensure that they are in compliance with company security standards</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            CGI Scanning Consolidation
+                (OID: 1.3.6.1.4.1.25623.1.0.111038)
+              </p>
+<p>
+                  Version used: $Revision: 13679 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/CPE-T</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            CPE Inventory
+            (OID: 1.3.6.1.4.1.25623.1.0.810002)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine uses information collected by other routines about
+  CPE identities of operating systems, services and
+  applications detected during the scan.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>192.168.1.2|cpe:/a:microsoft:ftp_service
+192.168.1.2|cpe:/o:microsoft:windows</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            CPE Inventory
+                (OID: 1.3.6.1.4.1.25623.1.0.810002)
+              </p>
+<p>
+                  Version used: $Revision: 14324 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>http://cpe.mitre.org/</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">135/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            DCE/RPC and MSRPC Services Enumeration
+            (OID: 1.3.6.1.4.1.25623.1.0.108044)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Distributed Computing Environment / Remote Procedure Calls (DCE/RPC) or MSRPC services running
+  on the remote host can be enumerated by connecting on port 135 and doing the appropriate queries.</p>
+<p>  The actual reporting takes place in the NVT 'DCE/RPC and MSRPC Services Enumeration Reporting'
+  (OID: 1.3.6.1.4.1.25623.1.0.10736)</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>A DCE endpoint resolution service seems to be running on this port.</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker may use this fact to gain more knowledge
+  about the remote host.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Filter incoming traffic to this port.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            DCE/RPC and MSRPC Services Enumeration
+                (OID: 1.3.6.1.4.1.25623.1.0.108044)
+              </p>
+<p>
+                  Version used: $Revision: 11885 $</p>
+</div>
+<div class="result_head medium">
+<div class="location_float">135/tcp</div>
+<b>Medium</b>
+                 (CVSS: 5.0)
+              <div class="full_width">
+            NVT:
+            DCE/RPC and MSRPC Services Enumeration Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.10736)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Distributed Computing Environment / Remote Procedure Calls (DCE/RPC) or MSRPC services running
+  on the remote host can be enumerated by connecting on port 135 and doing the appropriate queries.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Here is the list of DCE/RPC or MSRPC services running on this host via the TCP protocol:
+
+Port: 49664/tcp
+
+     UUID: d95afe70-a6d5-4259-822e-2c84da1ddb0d, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49664]
+
+Port: 49665/tcp
+
+     UUID: 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d5, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49665]
+     Annotation: DHCP Client LRPC Endpoint
+
+     UUID: 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d6, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49665]
+     Annotation: DHCPv6 Client LRPC Endpoint
+
+     UUID: f6beaff7-1e19-4fbb-9f8f-b89e2018337c, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49665]
+     Annotation: Event log TCPIP
+
+Port: 49667/tcp
+
+     UUID: 0b1c2170-5732-4e0e-8cd3-d9b16f3b84d7, version 0
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49667]
+     Annotation: RemoteAccessCheck
+
+     UUID: 12345678-1234-abcd-ef00-01234567cffb, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49667]
+     Named pipe : lsass
+     Win32 service or process : Netlogon
+     Description : Net Logon service
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ab, version 0
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49667]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : LSA access
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ac, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49667]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : SAM access
+
+     UUID: e3514235-4b06-11d1-ab04-00c04fc2dcd2, version 4
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49667]
+     Annotation: MS NT Directory DRS Interface
+
+     UUID: f5cc5a18-4264-101a-8c59-08002b2f8426, version 56
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49667]
+     Annotation: MS NT Directory NSP Interface
+
+Port: 49668/tcp
+
+     UUID: 0b1c2170-5732-4e0e-8cd3-d9b16f3b84d7, version 0
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49668]
+     Annotation: RemoteAccessCheck
+
+     UUID: 12345678-1234-abcd-ef00-01234567cffb, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49668]
+     Named pipe : lsass
+     Win32 service or process : Netlogon
+     Description : Net Logon service
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ab, version 0
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49668]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : LSA access
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ac, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49668]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : SAM access
+
+     UUID: e3514235-4b06-11d1-ab04-00c04fc2dcd2, version 4
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49668]
+     Annotation: MS NT Directory DRS Interface
+
+     UUID: f5cc5a18-4264-101a-8c59-08002b2f8426, version 56
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49668]
+     Annotation: MS NT Directory NSP Interface
+
+Port: 49669/tcp
+
+     UUID: 0b1c2170-5732-4e0e-8cd3-d9b16f3b84d7, version 0
+     Endpoint: ncacn_http:192.168.1.2[49669]
+     Annotation: RemoteAccessCheck
+
+     UUID: 12345678-1234-abcd-ef00-01234567cffb, version 1
+     Endpoint: ncacn_http:192.168.1.2[49669]
+     Named pipe : lsass
+     Win32 service or process : Netlogon
+     Description : Net Logon service
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ab, version 0
+     Endpoint: ncacn_http:192.168.1.2[49669]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : LSA access
+
+     UUID: e3514235-4b06-11d1-ab04-00c04fc2dcd2, version 4
+     Endpoint: ncacn_http:192.168.1.2[49669]
+     Annotation: MS NT Directory DRS Interface
+
+     UUID: f5cc5a18-4264-101a-8c59-08002b2f8426, version 56
+     Endpoint: ncacn_http:192.168.1.2[49669]
+     Annotation: MS NT Directory NSP Interface
+
+Port: 49670/tcp
+
+     UUID: 0d3c7f20-1c8d-4654-a1b3-51563b298bda, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49670]
+     Annotation: UserMgrCli
+
+     UUID: 2e6035b2-e8f1-41a7-a044-656b439c4c34, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49670]
+     Annotation: Proxy Manager provider server endpoint
+
+     UUID: 3a9ef155-691d-4449-8d05-09ad57031823, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49670]
+
+     UUID: 552d076a-cb29-4e44-8b6a-d15e59e2c0af, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49670]
+     Annotation: IP Transition Configuration endpoint
+
+     UUID: 86d35949-83c9-4044-b424-db363231fd0c, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49670]
+
+     UUID: a398e520-d59a-4bdd-aa7a-3c1e0303a511, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49670]
+     Annotation: IKE/Authip API
+
+     UUID: b18fbab6-56f8-4702-84e0-41053293a869, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49670]
+     Annotation: UserMgrCli
+
+     UUID: c36be077-e14b-4fe9-8abc-e856ef4f048b, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49670]
+     Annotation: Proxy Manager client server endpoint
+
+     UUID: c49a5a70-8a7f-4e70-ba16-1e8f1f193ef1, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49670]
+     Annotation: Adh APIs
+
+Port: 49671/tcp
+
+     UUID: 0b6edbfa-4a24-4fc6-8a23-942b1eca65d1, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49671]
+
+     UUID: 12345678-1234-abcd-ef00-0123456789ab, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49671]
+     Named pipe : spoolss
+     Win32 service or process : spoolsv.exe
+     Description : Spooler service
+
+     UUID: 4a452661-8290-4b36-8fbe-7f4093a94978, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49671]
+
+     UUID: 76f03f96-cdfd-44fc-a22c-64950a001209, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49671]
+
+     UUID: ae33069b-a2a8-46ee-a235-ddfd339be281, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49671]
+
+Port: 49680/tcp
+
+     UUID: 50abc2a4-574d-40b3-9d66-ee4fd5fba076, version 5
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49680]
+     Named pipe : dnsserver
+     Win32 service or process : dns.exe
+     Description : DNS Server
+
+Port: 49697/tcp
+
+     UUID: 367abb81-9844-35f1-ad32-98f038001003, version 2
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49697]
+
+Port: 49698/tcp
+
+     UUID: 5b821720-f63b-11d0-aad2-00c04fc324db, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49698]
+
+     UUID: 6bffd098-a112-3610-9833-46c3f874532d, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49698]
+
+Port: 49728/tcp
+
+     UUID: 897e2e5f-93f3-4376-9c9c-fd2277495c27, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.2[49728]
+     Annotation: Frs2 Service
+
+Note: DCE/RPC or MSRPC services running on this host locally were identified. Reporting this list is not enabled by default due to the possible large size of this list. See the script preferences to enable this reporting.</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker may use this fact to gain more knowledge
+  about the remote host.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Filter incoming traffic to this ports.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            DCE/RPC and MSRPC Services Enumeration Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.10736)
+              </p>
+<p>
+                  Version used: $Revision: 6319 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            DIRB (NASL wrapper)
+            (OID: 1.3.6.1.4.1.25623.1.0.103079)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script uses DIRB to find directories and files on web
+  applications via brute forcing. See the preferences section for configuration options.</p>
+<p>  Note: The plugin needs the 'dirb' binary found within the PATH of the user running the scanner and
+  needs to be executable for this user. The existence of this binary is checked and reported separately
+  within 'Availability of scanner helper tools' (OID: 1.3.6.1.4.1.25623.1.0.810000).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>This are the directories/files found with brute force:
+
+http://192.168.1.2:80/</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            DIRB (NASL wrapper)
+                (OID: 1.3.6.1.4.1.25623.1.0.103079)
+              </p>
+<p>
+                  Version used: $Revision: 13985 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">53/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            DNS Server Detection (TCP)
+            (OID: 1.3.6.1.4.1.25623.1.0.108018)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>A DNS Server is running at this Host.
+  A Name Server translates domain names into IP addresses. This makes it
+  possible for a user to access a website by typing in the domain name instead of
+  the website's actual IP address.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><p>
+                    Vulnerability was detected according to the Vulnerability Detection Method.
+                  </p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            DNS Server Detection (TCP)
+                (OID: 1.3.6.1.4.1.25623.1.0.108018)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">21/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            FTP Banner Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.10092)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This Plugin detects and reports a FTP Server Banner.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Remote FTP server banner:
+
+220 Microsoft FTP Service
+
+This is probably:
+
+- Microsoft IIS FTP Server
+
+Server operating system information collected via "SYST" command:
+
+215 Windows_NT
+
+Server status information collected via "STAT" command:
+
+211-Microsoft FTP Service status: 
+     Logged in user: anonymous 
+     TYPE: ASCII; FORM: NONPRINT; STRUcture: FILE; transfer MODE: STREAM 
+     Data connection: none 
+211 End of status.</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            FTP Banner Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.10092)
+              </p>
+<p>
+                  Version used: $Revision: 13637 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">21/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            FTP Missing Support For AUTH TLS
+            (OID: 1.3.6.1.4.1.25623.1.0.108553)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote FTP server does not support the 'AUTH TLS' command.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The remote FTP server does not support the 'AUTH TLS' command.</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            FTP Missing Support For AUTH TLS
+                (OID: 1.3.6.1.4.1.25623.1.0.108553)
+              </p>
+<p>
+                  Version used: $Revision: 13863 $</p>
+</div>
+<div class="result_head medium">
+<div class="location_float">21/tcp</div>
+<b>Medium</b>
+                 (CVSS: 4.8)
+              <div class="full_width">
+            NVT:
+            FTP Unencrypted Cleartext Login
+            (OID: 1.3.6.1.4.1.25623.1.0.108528)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host is running a FTP service that allows cleartext logins over
+  unencrypted connections.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The remote FTP service accepts logins without a previous sent 'AUTH TLS' command. Response(s):
+
+Anonymous sessions:     331 Anonymous access allowed, send identity (e-mail name) as password.
+Non-anonymous sessions: 331 Password required</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker can uncover login names and passwords by sniffing traffic to the
+  FTP service.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Enable FTPS or enforce the connection via the 'AUTH TLS' command. Please see
+  the manual of the FTP service for more information.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Tries to login to a non FTPS enabled FTP service without sending a
+  'AUTH TLS' command first and checks if the service is accepting the login without enforcing the use of
+  the 'AUTH TLS' command.</p>
+<p>
+            Details:
+            FTP Unencrypted Cleartext Login
+                (OID: 1.3.6.1.4.1.25623.1.0.108528)
+              </p>
+<p>
+                  Version used: $Revision: 13611 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            HTTP Server type and version
+            (OID: 1.3.6.1.4.1.25623.1.0.10107)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This detects the HTTP Server's type and version.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The remote web server type is :
+
+Microsoft-HTTPAPI/2.0 </pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p>- Configure your server to use an alternate name like
+  'Wintendo httpD w/Dotmatrix display'</p>
+<p>  - Be sure to remove common logos like apache_pb.gif.</p>
+<p>  - With Apache, you can set the directive 'ServerTokens Prod' to limit
+  the information emanating from the server in its response headers.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            HTTP Server type and version
+                (OID: 1.3.6.1.4.1.25623.1.0.10107)
+              </p>
+<p>
+                  Version used: $Revision: 11585 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">88/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Kerberos Detection (TCP)
+            (OID: 1.3.6.1.4.1.25623.1.0.103854)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The script sends a connection request to detect a running kerberos server.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>A Kerberos Server is running at this port.
+
+Realm: EMPIDIMED.COM
+Server time: 2023-01-06 11:43:45</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Kerberos Detection (TCP)
+                (OID: 1.3.6.1.4.1.25623.1.0.103854)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">3268/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            LDAP Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.100082)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>A LDAP Server is running at this host.</p>
+<p>  The Lightweight Directory Access Protocol, or LDAP is an application
+  protocol for querying and modifying directory services running over
+  TCP/IP.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The LDAP Server supports LDAPv3.</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            LDAP Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.100082)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">389/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            LDAP Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.100082)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>A LDAP Server is running at this host.</p>
+<p>  The Lightweight Directory Access Protocol, or LDAP is an application
+  protocol for querying and modifying directory services running over
+  TCP/IP.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The LDAP Server supports LDAPv3.</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            LDAP Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.100082)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">21/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Microsoft IIS FTP Server Version Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.900875)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Detection of Microsoft IIS FTP Server.</p>
+<p>  The script sends a connection request to the server and attempts to extract the version number from the reply.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Detected Microsoft IIS FTP Server
+
+Version:  unknown
+Location: 21/tcp
+CPE:      cpe:/a:microsoft:ftp_service</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Microsoft IIS FTP Server Version Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.900875)
+              </p>
+<p>
+                  Version used: $Revision: 13501 $</p>
+</div>
+<div class="result_head high">
+<div class="location_float">445/tcp</div>
+<b>High</b>
+                 (CVSS: 9.3)
+              <div class="full_width">
+            NVT:
+            Microsoft Windows SMB Server Multiple Vulnerabilities-Remote (4013389)
+            (OID: 1.3.6.1.4.1.25623.1.0.810676)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This host is missing a critical security
+  update according to Microsoft Bulletin MS17-010.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><p>
+                    Vulnerability was detected according to the Vulnerability Detection Method.
+                  </p>
+</div>
+<div class="result_section">
+<b>Impact</b><p>Successful exploitation will allow remote
+  attackers to gain the ability to execute code on the target server, also
+  could lead to information disclosure from the server.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>VendorFix</p>
+<p>Run Windows Update and update the
+  listed hotfixes or download and update mentioned hotfixes in the advisory</p>
+</div>
+<div class="result_section">
+<b>Affected Software/OS</b><p>Microsoft Windows 10 x32/x64 Edition
+  Microsoft Windows Server 2012 Edition
+  Microsoft Windows Server 2016
+  Microsoft Windows 8.1 x32/x64 Edition
+  Microsoft Windows Server 2012 R2 Edition
+  Microsoft Windows 7 x32/x64 Edition Service Pack 1
+  Microsoft Windows Vista x32/x64 Edition Service Pack 2
+  Microsoft Windows Server 2008 R2 x64 Edition Service Pack 1
+  Microsoft Windows Server 2008 x32/x64 Edition Service Pack 2</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>Multiple flaws exist due to the way that the
+  Microsoft Server Message Block 1.0 (SMBv1) server handles certain requests.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Send the crafted SMB transaction request
+  with fid = 0 and check the response to confirm the vulnerability.</p>
+<p>
+            Details:
+            Microsoft Windows SMB Server Multiple Vulnerabilities-Remote (4013389)
+                (OID: 1.3.6.1.4.1.25623.1.0.810676)
+              </p>
+<p>
+                  Version used: $Revision: 11874 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-2017-0143, CVE-2017-0144, CVE-2017-0145, CVE-2017-0146, CVE-2017-0147, CVE-2017-0148</td>
+</tr>
+<tr valign="top">
+<td>BID:</td>
+<td>96703,  96704,  96705,  96707,  96709,  96706</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K17/0435, DFN-CERT-2017-0448</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>https://support.microsoft.com/en-in/kb/4013078</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://technet.microsoft.com/library/security/MS17-010</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://github.com/rapid7/metasploit-framework/pull/8167/files</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Nikto (NASL wrapper)
+            (OID: 1.3.6.1.4.1.25623.1.0.14260)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This plugin uses nikto to find weak CGI scripts and other known issues
+  regarding web server security. See the preferences section for configuration options.</p>
+<p>  Note: The plugin needs the 'nikto' or 'nikto.pl' binary found within the PATH of the user running the scanner and
+  needs to be executable for this user. The existence of this binary is checked and reported separately
+  within 'Availability of scanner helper tools' (OID: 1.3.6.1.4.1.25623.1.0.810000).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Here is the Nikto report:
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          192.168.1.2
++ Target Hostname:    192.168.1.2
++ Target Port:        80
++ Start Time:         2023-01-06 12:51:08 (GMT0)
+---------------------------------------------------------------------------
++ Server: Microsoft-HTTPAPI/2.0
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ 7534 requests: 0 error(s) and 3 item(s) reported on remote host
++ End Time:           2023-01-06 12:51:31 (GMT0) (23 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Nikto (NASL wrapper)
+                (OID: 1.3.6.1.4.1.25623.1.0.14260)
+              </p>
+<p>
+                  Version used: $Revision: 13985 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            OS Detection Consolidation and Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.105937)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script consolidates the OS information detected by several NVTs and tries to find the best matching OS.</p>
+<p>  Furthermore it reports all previously collected information leading to this best matching OS. It also reports possible additional information
+  which might help to improve the OS detection.</p>
+<p>  If any of this information is wrong or could be improved please consider to report these to the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Best matching OS:
+
+OS: Microsoft Windows
+CPE: cpe:/o:microsoft:windows
+Found by NVT: 1.3.6.1.4.1.25623.1.0.105355 (FTP OS Identification)
+Concluded from FTP banner on port 21/tcp: 220 Microsoft FTP Service
+Setting key "Host/runs_windows" based on this information
+
+Other OS detections (in order of reliability):
+
+OS: Windows Server 2016 Datacenter 14393
+CPE: cpe:/o:microsoft:windows_server_2016
+Found by NVT: 1.3.6.1.4.1.25623.1.0.102011 (SMB NativeLanMan)
+Concluded from SMB/Samba banner on port 445/tcp: OS String: Windows Server 2016 Datacenter 14393; SMB String: Windows Server 2016 Datacenter 6.3
+
+OS: Microsoft Windows
+CPE: cpe:/o:microsoft:windows
+Found by NVT: 1.3.6.1.4.1.25623.1.0.111067 (HTTP OS Identification)
+Concluded from HTTP Server banner on port 80/tcp: Server: Microsoft-HTTPAPI/2.0
+
+OS: Microsoft Windows
+CPE: cpe:/o:microsoft:windows
+Found by NVT: 1.3.6.1.4.1.25623.1.0.108044 (DCE/RPC and MSRPC Services Enumeration)
+Concluded from DCE/RPC and MSRPC Services Enumeration on port 135/tcp</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            OS Detection Consolidation and Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.105937)
+              </p>
+<p>
+                  Version used: $Revision: 14244 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">21/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Services
+            (OID: 1.3.6.1.4.1.25623.1.0.10330)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>An FTP server is running on this port.
+Here is its banner : 
+220 Microsoft FTP Service </pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Services
+                (OID: 1.3.6.1.4.1.25623.1.0.10330)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Services
+            (OID: 1.3.6.1.4.1.25623.1.0.10330)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>A web server is running on this port</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Services
+                (OID: 1.3.6.1.4.1.25623.1.0.10330)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">445/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SMB NativeLanMan
+            (OID: 1.3.6.1.4.1.25623.1.0.102011)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>It is possible to extract OS, domain and SMB server information
+  from the Session Setup AndX Response packet which is generated during NTLM authentication.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Detected SMB workgroup: EMPIDIMED
+Detected SMB server: Windows Server 2016 Datacenter 6.3
+Detected OS: Windows Server 2016 Datacenter 14393</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SMB NativeLanMan
+                (OID: 1.3.6.1.4.1.25623.1.0.102011)
+              </p>
+<p>
+                  Version used: $Revision: 13813 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">445/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SMB Remote Version Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.807830)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Detection of Server Message Block(SMB).</p>
+<p>  This script sends SMB Negotiation request and try to get the version from the
+  response.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>SMBv1 and SMBv2 are enabled on remote target</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SMB Remote Version Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.807830)
+              </p>
+<p>
+                  Version used: $Revision: 10898 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">445/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SMB Test with 'smbclient'
+            (OID: 1.3.6.1.4.1.25623.1.0.90011)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script reports information about the SMB server of the remote host
+  collected with the 'smbclient' tool.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>OS Version = WINDOWS SERVER 2016 DATACENTER 14393
+Domain = EMPIDIMED
+SMB Serverversion = WINDOWS SERVER 2016 DATACENTER 6.3</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SMB Test with 'smbclient'
+                (OID: 1.3.6.1.4.1.25623.1.0.90011)
+              </p>
+<p>
+                  Version used: $Revision: 13274 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">445/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SMB/CIFS Server Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.11011)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script detects whether port 445 and 139 are open and
+  if they are running a CIFS/SMB server.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>A CIFS server is running on this port</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SMB/CIFS Server Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.11011)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">139/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SMB/CIFS Server Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.11011)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script detects whether port 445 and 139 are open and
+  if they are running a CIFS/SMB server.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>A SMB server is running on this port</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SMB/CIFS Server Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.11011)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head low">
+<div class="location_float">general/tcp</div>
+<b>Low</b>
+                 (CVSS: 2.6)
+              <div class="full_width">
+            NVT:
+            TCP timestamps
+            (OID: 1.3.6.1.4.1.25623.1.0.80091)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host implements TCP timestamps and therefore allows to compute
+  the uptime.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>It was detected that the host implements RFC1323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 2591986727
+Packet 2: 2591987824</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>To disable TCP timestamps on linux add the line 'net.ipv4.tcp_timestamps = 0' to
+  /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at runtime.</p>
+<p>  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'</p>
+<p>  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.</p>
+<p>  The default behavior of the TCP/IP stack on this Systems is to not use the
+  Timestamp options when initiating TCP connections, but use them if the TCP peer
+  that is initiating communication includes them in their synchronize (SYN) segment.</p>
+<p>  See the references for more information.</p>
+</div>
+<div class="result_section">
+<b>Affected Software/OS</b><p>TCP/IPv4 implementations that implement RFC1323.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>The remote host implements TCP timestamps, as defined by RFC1323.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Special IP packets are forged and sent with a little delay in between to the
+  target IP. The responses are searched for a timestamps. If found, the timestamps are reported.</p>
+<p>
+            Details:
+            TCP timestamps
+                (OID: 1.3.6.1.4.1.25623.1.0.80091)
+              </p>
+<p>
+                  Version used: $Revision: 14310 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc1323.txt</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>http://www.microsoft.com/en-us/download/details.aspx?id=9152</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Traceroute
+            (OID: 1.3.6.1.4.1.25623.1.0.51662)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>A traceroute from the scanning server to the target system was
+  conducted. This traceroute is provided primarily for informational value only. In the vast
+  majority of cases, it does not represent a vulnerability. However, if the displayed traceroute
+  contains any private addresses that should not have been publicly visible, then you have an
+  issue you need to correct.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Here is the route from 172.17.0.2 to 192.168.1.2:
+
+172.17.0.2
+192.168.1.2</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p>Block unwanted packets from escaping your network.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Traceroute
+                (OID: 1.3.6.1.4.1.25623.1.0.51662)
+              </p>
+<p>
+                  Version used: $Revision: 10411 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">636/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Unknown OS and Service Banner Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.108441)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This NVT consolidates and reports the information collected by
+  the following NVTs:</p>
+<p>  - Collect banner of unknown services (OID: 1.3.6.1.4.1.25623.1.0.11154)</p>
+<p>  - Service Detection (unknown) with nmap (OID: 1.3.6.1.4.1.25623.1.0.66286)</p>
+<p>  - Service Detection (wrapped) with nmap (OID: 1.3.6.1.4.1.25623.1.0.108525)</p>
+<p>  - OS Detection Consolidation and Reporting (OID: 1.3.6.1.4.1.25623.1.0.105937)</p>
+<p>  If you know any of the information reported here, please send the full output to
+  the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Nmap service detection (unknown) result for this port: tcpwrapped</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Unknown OS and Service Banner Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.108441)
+              </p>
+<p>
+                  Version used: $Revision: 12934 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">464/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Unknown OS and Service Banner Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.108441)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This NVT consolidates and reports the information collected by
+  the following NVTs:</p>
+<p>  - Collect banner of unknown services (OID: 1.3.6.1.4.1.25623.1.0.11154)</p>
+<p>  - Service Detection (unknown) with nmap (OID: 1.3.6.1.4.1.25623.1.0.66286)</p>
+<p>  - Service Detection (wrapped) with nmap (OID: 1.3.6.1.4.1.25623.1.0.108525)</p>
+<p>  - OS Detection Consolidation and Reporting (OID: 1.3.6.1.4.1.25623.1.0.105937)</p>
+<p>  If you know any of the information reported here, please send the full output to
+  the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Nmap service detection (unknown) result for this port: kpasswd5
+
+This is a guess. A confident identification of the service was not possible.
+
+Hint: If you're running a recent nmap version try to run nmap with the following command: 'nmap -sV -Pn -p 464 192.168.1.2' and submit a possible collected fingerprint to the nmap database.</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Unknown OS and Service Banner Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.108441)
+              </p>
+<p>
+                  Version used: $Revision: 12934 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            wapiti (NASL wrapper)
+            (OID: 1.3.6.1.4.1.25623.1.0.80110)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This plugin uses wapiti to find
+  web security issues.</p>
+<p>  Make sure to have wapiti 2.x as wapiti 1.x is not supported.</p>
+<p>  See the preferences section for wapiti options.</p>
+<p>  Note that the scanner is using limited set of wapiti options. Therefore, for more complete web
+  assessment, you should use standalone wapiti tool for deeper/customized checks.</p>
+<p>  Note: The plugin needs the 'wapiti' binary found within the PATH of the user running the scanner and
+  needs to be executable for this user. The existence of this binary is checked and reported separately
+  within 'Availability of scanner helper tools' (OID: 1.3.6.1.4.1.25623.1.0.810000).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The wapiti report filename is empty. That could mean that a wrong version of wapiti is used or tmp dir is not accessible. Make sure to have wapiti 2.x as wapiti 1.x is not supported.
+In short: Check the installation of wapiti and the scanner.</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            wapiti (NASL wrapper)
+                (OID: 1.3.6.1.4.1.25623.1.0.80110)
+              </p>
+<p>
+                  Version used: $Revision: 13985 $</p>
+</div>
+<h2 id="192.168.1.1">Host 192.168.1.1</h2>
+<table>
+<tr>
+<td>Scanning of this host started at:</td>
+<td>Fri Jan 6 12:43:29 2023 UTC</td>
+</tr>
+<tr>
+<td>Number of results:</td>
+<td>19</td>
+</tr>
+</table>
+<h3>Port Summary for Host 192.168.1.1</h3>
+<table width="100%">
+<tr class="table_head">
+<td>Service (Port)</td>
+<td>Threat Level</td>
+</tr>
+<tr>
+<td>general/tcp</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>80/tcp</td>
+<td>High</td>
+</tr>
+<tr>
+<td>general/icmp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>53/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/CPE-T</td>
+<td>Log</td>
+</tr>
+</table>
+<h3>Security Issues for Host 192.168.1.1</h3>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            CGI Scanning Consolidation
+            (OID: 1.3.6.1.4.1.25623.1.0.111038)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The script consolidates various information for CGI scanning.</p>
+<p>  This information is based on the following scripts / settings:</p>
+<p>  - HTTP-Version Detection (OID: 1.3.6.1.4.1.25623.1.0.100034)</p>
+<p>  - No 404 check (OID: 1.3.6.1.4.1.25623.1.0.10386)</p>
+<p>  - Web mirroring / webmirror.nasl (OID: 1.3.6.1.4.1.25623.1.0.10662)</p>
+<p>  - Directory Scanner / DDI_Directory_Scanner.nasl (OID: 1.3.6.1.4.1.25623.1.0.11032)</p>
+<p>  - The configured 'cgi_path' within the 'Scanner Preferences' of the scan config in use</p>
+<p>  - The configured 'Enable CGI scanning', 'Enable generic web application scanning' and
+    'Add historic /scripts and /cgi-bin to directories for CGI scanning' within the
+    'Global variable settings' of the scan config in use</p>
+<p>  If you think any of this information is wrong please report it to the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The Hostname/IP "pfSense.localdomain" was used to access the remote host.
+
+Generic web application scanning is disabled for this host via the "Enable generic web application scanning" option within the "Global variable settings" of the scan config in use.
+
+Requests to this service are done via HTTP/1.1.
+
+This service seems to be able to host PHP scripts.
+
+This service seems to be NOT able to host ASP scripts.
+
+The User-Agent "Mozilla/5.0 [en] (X11, U; OpenVAS-VT 9.0.3)" was used to access the remote host.
+
+Historic /scripts and /cgi-bin are not added to the directories used for CGI scanning. You can enable this again with the "Add historic /scripts and /cgi-bin to directories for CGI scanning" option within the "Global variable settings" of the scan config in use.
+
+The following directories were used for CGI scanning:
+
+http://pfSense.localdomain/
+http://pfSense.localdomain/classes
+http://pfSense.localdomain/csrf
+http://pfSense.localdomain/includes
+
+While this is not, in and of itself, a bug, you should manually inspect these directories to ensure that they are in compliance with company security standards
+
+The following directories were excluded from CGI scanning because the "Regex pattern to exclude directories from CGI scanning" setting of the NVT "Global variable settings" (OID: 1.3.6.1.4.1.25623.1.0.12288) for this scan was: "/(index\.php|image|img|css|js$|js/|javascript|style|theme|icon|jquery|graphic|grafik|picture|bilder|thumbnail|media/|skins?/)"
+
+http://pfSense.localdomain/css
+http://pfSense.localdomain/js
+http://pfSense.localdomain/vendor/bootstrap/css
+http://pfSense.localdomain/vendor/bootstrap/js
+http://pfSense.localdomain/vendor/jquery
+
+The following cgi scripts were excluded from CGI scanning because of the "Regex pattern to exclude cgi scripts" setting of the NVT "Web mirroring" (OID: 1.3.6.1.4.1.25623.1.0.10662) for this scan was: "\.(js|css)$"
+
+Syntax : cginame (arguments [default value])
+
+http://pfSense.localdomain/css/login.css (v [1510914901] )
+http://pfSense.localdomain/js/pfSense.js (v [1513000593] )
+http://pfSense.localdomain/vendor/bootstrap/js/bootstrap.min.js (v [1510914902] )
+http://pfSense.localdomain/vendor/jquery/jquery-1.12.0.min.js (v [1510914902] )</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            CGI Scanning Consolidation
+                (OID: 1.3.6.1.4.1.25623.1.0.111038)
+              </p>
+<p>
+                  Version used: $Revision: 13679 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">80/tcp</div>
+<b>Medium</b>
+                 (CVSS: 4.8)
+              <div class="full_width">
+            NVT:
+            Cleartext Transmission of Sensitive Information via HTTP
+            (OID: 1.3.6.1.4.1.25623.1.0.108440)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The following input fields where identified (URL:input name):
+
+http://pfSense.localdomain/:passwordfld
+http://pfSense.localdomain/license.php:passwordfld</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Workaround</p>
+<p>Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.</p>
+</div>
+<div class="result_section">
+<b>Affected Software/OS</b><p>Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.</p>
+<p>  The script is currently checking the following:</p>
+<p>  - HTTP Basic Authentication (Basic Auth)</p>
+<p>  - HTTP Forms (e.g. Login) with input field of type 'password'</p>
+<p>
+            Details:
+            Cleartext Transmission of Sensitive Information via HTTP
+                (OID: 1.3.6.1.4.1.25623.1.0.108440)
+              </p>
+<p>
+                  Version used: $Revision: 10726 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>https://www.owasp.org/index.php/Top_10_2013-A2-Broken_Authentication_and_Session_Management</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://www.owasp.org/index.php/Top_10_2013-A6-Sensitive_Data_Exposure</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://cwe.mitre.org/data/definitions/319.html</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/CPE-T</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            CPE Inventory
+            (OID: 1.3.6.1.4.1.25623.1.0.810002)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine uses information collected by other routines about
+  CPE identities of operating systems, services and
+  applications detected during the scan.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>192.168.1.1|cpe:/a:jquery:jquery:1.12.0
+192.168.1.1|cpe:/a:nginx:nginx
+192.168.1.1|cpe:/a:pfsense:pfsense
+192.168.1.1|cpe:/a:php:php
+192.168.1.1|cpe:/h:hp:jetdirect</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            CPE Inventory
+                (OID: 1.3.6.1.4.1.25623.1.0.810002)
+              </p>
+<p>
+                  Version used: $Revision: 14324 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>http://cpe.mitre.org/</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            DIRB (NASL wrapper)
+            (OID: 1.3.6.1.4.1.25623.1.0.103079)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script uses DIRB to find directories and files on web
+  applications via brute forcing. See the preferences section for configuration options.</p>
+<p>  Note: The plugin needs the 'dirb' binary found within the PATH of the user running the scanner and
+  needs to be executable for this user. The existence of this binary is checked and reported separately
+  within 'Availability of scanner helper tools' (OID: 1.3.6.1.4.1.25623.1.0.810000).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>This are the directories/files found with brute force:
+
+http://pfSense.localdomain:80/
+http://pfSense.localdomain:80/classes/
+http://pfSense.localdomain:80/css/
+http://pfSense.localdomain:80/help.php
+http://pfSense.localdomain:80/includes/
+http://pfSense.localdomain:80/index.php
+http://pfSense.localdomain:80/js/
+http://pfSense.localdomain:80/stats.php
+http://pfSense.localdomain:80/status.php
+http://pfSense.localdomain:80/system.php
+http://pfSense.localdomain:80/xmlrpc.php</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            DIRB (NASL wrapper)
+                (OID: 1.3.6.1.4.1.25623.1.0.103079)
+              </p>
+<p>
+                  Version used: $Revision: 13985 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">53/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            DNS Server Detection (TCP)
+            (OID: 1.3.6.1.4.1.25623.1.0.108018)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>A DNS Server is running at this Host.
+  A Name Server translates domain names into IP addresses. This makes it
+  possible for a user to access a website by typing in the domain name instead of
+  the website's actual IP address.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><p>
+                    Vulnerability was detected according to the Vulnerability Detection Method.
+                  </p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            DNS Server Detection (TCP)
+                (OID: 1.3.6.1.4.1.25623.1.0.108018)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            HTTP Security Headers Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.112081)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>All known security headers are being checked on the host. On completion a report will hand back whether a specific security header
+      has been implemented (including its value) or is missing on the target.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Header Name        Header Value
+-----------        ------------
+X-Frame-Options  : SAMEORIGIN 
+X-Frame-Options
+
+Missing Headers                   
+---------------                   
+Content-Security-Policy           
+Referrer-Policy                   
+X-Content-Type-Options            
+X-Permitted-Cross-Domain-Policies 
+X-XSS-Protection</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            HTTP Security Headers Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.112081)
+              </p>
+<p>
+                  Version used: $Revision: 10899 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>https://www.owasp.org/index.php/OWASP_Secure_Headers_Project</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#tab=Headers</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://securityheaders.io/</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            HTTP Server type and version
+            (OID: 1.3.6.1.4.1.25623.1.0.10107)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This detects the HTTP Server's type and version.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The remote web server type is :
+
+nginx </pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p>- Configure your server to use an alternate name like
+  'Wintendo httpD w/Dotmatrix display'</p>
+<p>  - Be sure to remove common logos like apache_pb.gif.</p>
+<p>  - With Apache, you can set the directive 'ServerTokens Prod' to limit
+  the information emanating from the server in its response headers.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            HTTP Server type and version
+                (OID: 1.3.6.1.4.1.25623.1.0.10107)
+              </p>
+<p>
+                  Version used: $Revision: 11585 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/icmp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            ICMP Timestamp Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.103190)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host responded to an ICMP timestamp request.
+  The Timestamp Reply is an ICMP message which replies to a Timestamp message. It consists
+  of the originating timestamp sent by the sender of the Timestamp as well as a receive
+  timestamp and a transmit timestamp. This information could theoretically be used to
+  exploit weak time-based random number generators in other services.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><p>
+                    Vulnerability was detected according to the Vulnerability Detection Method.
+                  </p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            ICMP Timestamp Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.103190)
+              </p>
+<p>
+                  Version used: $Revision: 10411 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-1999-0524</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K15/1514, CB-K14/0632, DFN-CERT-2014-0658</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc0792.txt</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            jQuery Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.141622)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Detection of jQuery.</p>
+<p>  The script sends a connection request to the server and attempts to detect jQuery and to extract its version.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Detected jQuery
+
+Version:  1.12.0
+Location: /vendor/jquery
+CPE:      cpe:/a:jquery:jquery:1.12.0
+
+Concluded from version/product identification result:
+src="/vendor/jquery/jquery-1.12.0.min.js</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            jQuery Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.141622)
+              </p>
+<p>
+                  Version used: $Revision: 14001 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://jquery.com/</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            nginx Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.100274)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Detection of nginx.</p>
+<p>  The script sends a connection request to the server and attempts to
+  extract the version number from the reply.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Detected nginx
+
+Version:  unknown
+Location: 80/tcp
+CPE:      cpe:/a:nginx:nginx</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            nginx Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.100274)
+              </p>
+<p>
+                  Version used: $Revision: 13859 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Nikto (NASL wrapper)
+            (OID: 1.3.6.1.4.1.25623.1.0.14260)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This plugin uses nikto to find weak CGI scripts and other known issues
+  regarding web server security. See the preferences section for configuration options.</p>
+<p>  Note: The plugin needs the 'nikto' or 'nikto.pl' binary found within the PATH of the user running the scanner and
+  needs to be executable for this user. The existence of this binary is checked and reported separately
+  within 'Availability of scanner helper tools' (OID: 1.3.6.1.4.1.25623.1.0.810000).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Here is the Nikto report:
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          192.168.1.1
++ Target Hostname:    192.168.1.1
++ Target Port:        80
++ Virtual Host:       pfSense.localdomain
++ Start Time:         2023-01-06 12:49:57 (GMT0)
+---------------------------------------------------------------------------
++ Server: nginx
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Server leaks inodes via ETags, header found with file /favicon.ico, fields: 0x5a0ebb55 0x3aee 
++ OSVDB-112004: /: Site appears vulnerable to the 'shellshock' vulnerability (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6278).
++ OSVDB-112004: /index.php: Site appears vulnerable to the 'shellshock' vulnerability (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6278).
++ OSVDB-3092: /xmlrpc.php: xmlrpc.php was found.
++ /help.php: A help file was found.
++ 7607 requests: 0 error(s) and 7 item(s) reported on remote host
++ End Time:           2023-01-06 12:50:17 (GMT0) (20 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Nikto (NASL wrapper)
+                (OID: 1.3.6.1.4.1.25623.1.0.14260)
+              </p>
+<p>
+                  Version used: $Revision: 13985 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            OS Detection Consolidation and Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.105937)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script consolidates the OS information detected by several NVTs and tries to find the best matching OS.</p>
+<p>  Furthermore it reports all previously collected information leading to this best matching OS. It also reports possible additional information
+  which might help to improve the OS detection.</p>
+<p>  If any of this information is wrong or could be improved please consider to report these to the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Best matching OS:
+
+OS: HP JetDirect
+CPE: cpe:/h:hp:jetdirect
+Found by NVT: 1.3.6.1.4.1.25623.1.0.102002 (ICMP based OS Fingerprinting)
+Concluded from ICMP based OS fingerprint
+Setting key "Host/runs_unixoide" based on this information
+
+Other OS detections (in order of reliability):
+
+OS: FreeBSD
+CPE: cpe:/o:freebsd:freebsd
+Found by NVT: 1.3.6.1.4.1.25623.1.0.102002 (ICMP based OS Fingerprinting)
+Concluded from ICMP based OS fingerprint</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            OS Detection Consolidation and Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.105937)
+              </p>
+<p>
+                  Version used: $Revision: 14244 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<div class="result_head high">
+<div class="location_float">80/tcp</div>
+<b>High</b>
+                 (CVSS: 10.0)
+              <div class="full_width">
+            NVT:
+            pfSense Default Admin Credentials
+            (OID: 1.3.6.1.4.1.25623.1.0.112122)
+          </div>
+</div>
+<div class="result_section">
+            Product detection result:
+            cpe:/a:pfsense:pfsense
+            by
+            pfSense Detection (Version)
+            (OID: 1.3.6.1.4.1.25623.1.0.112118)
+          </div>
+<div class="result_section">
+<b>Summary</b><p>In pfSense it is possible to gain administrative access via default credentials.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>It was possible to authenticate with the following credentials:
+
+Username: admin
+Password: pfsense</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>This issue may be exploited by a remote attacker to gain access to sensitive information.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Change the passwords.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>By convention, each time you create a new instance of pfSense, the admin user is being created with default credentials:
+  Username: admin, Password: pfsense.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            pfSense Default Admin Credentials
+                (OID: 1.3.6.1.4.1.25623.1.0.112122)
+              </p>
+<p>
+                  Version used: $Revision: 13679 $</p>
+</div>
+<div class="result_section">
+<b>Product Detection Result</b><p><table>
+<tr>
+<td>Product:</td>
+<td>cpe:/a:pfsense:pfsense</td>
+</tr>
+<tr>
+<td>Method:</td>
+<td>pfSense Detection (Version)
+                    (OID: 1.3.6.1.4.1.25623.1.0.112118)
+                  </td>
+</tr>
+</table></p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>https://doc.pfsense.org/index.php/Installing_pfSense#pfSense_Default_Configuration</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://doc.pfsense.org/index.php/What_is_the_default_username_and_password</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            pfSense Detection (Version)
+            (OID: 1.3.6.1.4.1.25623.1.0.112118)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The script reports a detected pfSense including the
+  version number and exposed services.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Detected pfSense
+
+Version:  unknown
+Location: /
+CPE:      cpe:/a:pfsense:pfsense
+
+Extra information:
+
+Detection methods:
+
+HTTP(s) on port 80/tcp</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            pfSense Detection (Version)
+                (OID: 1.3.6.1.4.1.25623.1.0.112118)
+              </p>
+<p>
+                  Version used: $Revision: 8475 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            PHP Version Detection (Remote)
+            (OID: 1.3.6.1.4.1.25623.1.0.800109)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Detects the installed version of PHP.
+  This script sends HTTP GET request and try to get the version from the
+  response, and sets the result in KB.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Detected PHP
+
+Version:  unknown
+Location: 80/tcp
+CPE:      cpe:/a:php:php
+
+Concluded from version/product identification result:
+PHPSESSID Session-Cookie</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            PHP Version Detection (Remote)
+                (OID: 1.3.6.1.4.1.25623.1.0.800109)
+              </p>
+<p>
+                  Version used: $Revision: 13811 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Services
+            (OID: 1.3.6.1.4.1.25623.1.0.10330)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>A web server is running on this port</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Services
+                (OID: 1.3.6.1.4.1.25623.1.0.10330)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head low">
+<div class="location_float">general/tcp</div>
+<b>Low</b>
+                 (CVSS: 2.6)
+              <div class="full_width">
+            NVT:
+            TCP timestamps
+            (OID: 1.3.6.1.4.1.25623.1.0.80091)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host implements TCP timestamps and therefore allows to compute
+  the uptime.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>It was detected that the host implements RFC1323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 2633831357
+Packet 2: 2506625343</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>To disable TCP timestamps on linux add the line 'net.ipv4.tcp_timestamps = 0' to
+  /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at runtime.</p>
+<p>  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'</p>
+<p>  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.</p>
+<p>  The default behavior of the TCP/IP stack on this Systems is to not use the
+  Timestamp options when initiating TCP connections, but use them if the TCP peer
+  that is initiating communication includes them in their synchronize (SYN) segment.</p>
+<p>  See the references for more information.</p>
+</div>
+<div class="result_section">
+<b>Affected Software/OS</b><p>TCP/IPv4 implementations that implement RFC1323.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>The remote host implements TCP timestamps, as defined by RFC1323.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Special IP packets are forged and sent with a little delay in between to the
+  target IP. The responses are searched for a timestamps. If found, the timestamps are reported.</p>
+<p>
+            Details:
+            TCP timestamps
+                (OID: 1.3.6.1.4.1.25623.1.0.80091)
+              </p>
+<p>
+                  Version used: $Revision: 14310 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc1323.txt</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>http://www.microsoft.com/en-us/download/details.aspx?id=9152</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Traceroute
+            (OID: 1.3.6.1.4.1.25623.1.0.51662)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>A traceroute from the scanning server to the target system was
+  conducted. This traceroute is provided primarily for informational value only. In the vast
+  majority of cases, it does not represent a vulnerability. However, if the displayed traceroute
+  contains any private addresses that should not have been publicly visible, then you have an
+  issue you need to correct.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Here is the route from 172.17.0.2 to 192.168.1.1:
+
+172.17.0.2
+192.168.1.1</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p>Block unwanted packets from escaping your network.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Traceroute
+                (OID: 1.3.6.1.4.1.25623.1.0.51662)
+              </p>
+<p>
+                  Version used: $Revision: 10411 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">80/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            wapiti (NASL wrapper)
+            (OID: 1.3.6.1.4.1.25623.1.0.80110)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This plugin uses wapiti to find
+  web security issues.</p>
+<p>  Make sure to have wapiti 2.x as wapiti 1.x is not supported.</p>
+<p>  See the preferences section for wapiti options.</p>
+<p>  Note that the scanner is using limited set of wapiti options. Therefore, for more complete web
+  assessment, you should use standalone wapiti tool for deeper/customized checks.</p>
+<p>  Note: The plugin needs the 'wapiti' binary found within the PATH of the user running the scanner and
+  needs to be executable for this user. The existence of this binary is checked and reported separately
+  within 'Availability of scanner helper tools' (OID: 1.3.6.1.4.1.25623.1.0.810000).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The wapiti report filename is empty. That could mean that a wrong version of wapiti is used or tmp dir is not accessible. Make sure to have wapiti 2.x as wapiti 1.x is not supported.
+In short: Check the installation of wapiti and the scanner.</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            wapiti (NASL wrapper)
+                (OID: 1.3.6.1.4.1.25623.1.0.80110)
+              </p>
+<p>
+                  Version used: $Revision: 13985 $</p>
+</div>
+<h2 id="192.168.1.15">Host 192.168.1.15</h2>
+<table>
+<tr>
+<td>Scanning of this host started at:</td>
+<td>Fri Jan 6 12:43:29 2023 UTC</td>
+</tr>
+<tr>
+<td>Number of results:</td>
+<td>4</td>
+</tr>
+</table>
+<h3>Port Summary for Host 192.168.1.15</h3>
+<table width="100%">
+<tr class="table_head">
+<td>Service (Port)</td>
+<td>Threat Level</td>
+</tr>
+<tr>
+<td>general/icmp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/CPE-T</td>
+<td>Log</td>
+</tr>
+</table>
+<h3>Security Issues for Host 192.168.1.15</h3>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Check for enabled / working Port scanner plugin
+            (OID: 1.3.6.1.4.1.25623.1.0.108323)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The script reports if:</p>
+<p>  - a custom scan configuration is in use without having a Port scanner from
+  the 'Port scanners' family enabled.</p>
+<p>  - a port scanner plugin was running into a timeout.</p>
+<p>  - a required port scanner (e.g. nmap) is not installed.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The host wasn't scanned due to the following possible reasons:
+
+ - No Port scanner plugin from the "Port scanners" family is included in this scan configuration. Recommended: Nmap (NASL wrapper).
+ - The Port scanner plugin reached a timeout during the port scanning phase. Please either choose a port range for this target containing less ports or raise the "scanner_plugins_timeout" scanner preference to a higher timeout.</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p>Based on the script output please:</p>
+<p>  - add a Port scanner plugin from the 'Port scanners' family to this scan
+  configuration. Recommended: Nmap (NASL wrapper).</p>
+<p>  - either choose a port range for this target containing less ports or raise
+  the 'scanner_plugins_timeout' scanner preference to a higher timeout.</p>
+<p>  - install the 'nmap' binary/package or make it accessible to the scanner.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Check for enabled / working Port scanner plugin
+                (OID: 1.3.6.1.4.1.25623.1.0.108323)
+              </p>
+<p>
+                  Version used: $Revision: 10122 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>http://docs.greenbone.net/GSM-Manual/gos-4/en/performance.html#scan-performance</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>http://docs.greenbone.net/GSM-Manual/gos-4/en/vulnerabilitymanagement.html?highlight=scanner_plugins_timeout#general-preferences</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/CPE-T</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            CPE Inventory
+            (OID: 1.3.6.1.4.1.25623.1.0.810002)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine uses information collected by other routines about
+  CPE identities of operating systems, services and
+  applications detected during the scan.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>192.168.1.15|cpe:/o:linux:kernel</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            CPE Inventory
+                (OID: 1.3.6.1.4.1.25623.1.0.810002)
+              </p>
+<p>
+                  Version used: $Revision: 14324 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>http://cpe.mitre.org/</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/icmp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            ICMP Timestamp Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.103190)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host responded to an ICMP timestamp request.
+  The Timestamp Reply is an ICMP message which replies to a Timestamp message. It consists
+  of the originating timestamp sent by the sender of the Timestamp as well as a receive
+  timestamp and a transmit timestamp. This information could theoretically be used to
+  exploit weak time-based random number generators in other services.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><p>
+                    Vulnerability was detected according to the Vulnerability Detection Method.
+                  </p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            ICMP Timestamp Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.103190)
+              </p>
+<p>
+                  Version used: $Revision: 10411 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-1999-0524</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K15/1514, CB-K14/0632, DFN-CERT-2014-0658</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc0792.txt</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            OS Detection Consolidation and Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.105937)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script consolidates the OS information detected by several NVTs and tries to find the best matching OS.</p>
+<p>  Furthermore it reports all previously collected information leading to this best matching OS. It also reports possible additional information
+  which might help to improve the OS detection.</p>
+<p>  If any of this information is wrong or could be improved please consider to report these to the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Best matching OS:
+
+OS: Linux Kernel
+CPE: cpe:/o:linux:kernel
+Found by NVT: 1.3.6.1.4.1.25623.1.0.102002 (ICMP based OS Fingerprinting)
+Concluded from ICMP based OS fingerprint
+Setting key "Host/runs_unixoide" based on this information</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            OS Detection Consolidation and Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.105937)
+              </p>
+<p>
+                  Version used: $Revision: 14244 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<h2 id="192.168.1.18">Host 192.168.1.18</h2>
+<table>
+<tr>
+<td>Scanning of this host started at:</td>
+<td>Fri Jan 6 12:43:29 2023 UTC</td>
+</tr>
+<tr>
+<td>Number of results:</td>
+<td>4</td>
+</tr>
+</table>
+<h3>Port Summary for Host 192.168.1.18</h3>
+<table width="100%">
+<tr class="table_head">
+<td>Service (Port)</td>
+<td>Threat Level</td>
+</tr>
+<tr>
+<td>general/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/CPE-T</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/icmp</td>
+<td>Log</td>
+</tr>
+</table>
+<h3>Security Issues for Host 192.168.1.18</h3>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Check for enabled / working Port scanner plugin
+            (OID: 1.3.6.1.4.1.25623.1.0.108323)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The script reports if:</p>
+<p>  - a custom scan configuration is in use without having a Port scanner from
+  the 'Port scanners' family enabled.</p>
+<p>  - a port scanner plugin was running into a timeout.</p>
+<p>  - a required port scanner (e.g. nmap) is not installed.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The host wasn't scanned due to the following possible reasons:
+
+ - No Port scanner plugin from the "Port scanners" family is included in this scan configuration. Recommended: Nmap (NASL wrapper).
+ - The Port scanner plugin reached a timeout during the port scanning phase. Please either choose a port range for this target containing less ports or raise the "scanner_plugins_timeout" scanner preference to a higher timeout.</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p>Based on the script output please:</p>
+<p>  - add a Port scanner plugin from the 'Port scanners' family to this scan
+  configuration. Recommended: Nmap (NASL wrapper).</p>
+<p>  - either choose a port range for this target containing less ports or raise
+  the 'scanner_plugins_timeout' scanner preference to a higher timeout.</p>
+<p>  - install the 'nmap' binary/package or make it accessible to the scanner.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Check for enabled / working Port scanner plugin
+                (OID: 1.3.6.1.4.1.25623.1.0.108323)
+              </p>
+<p>
+                  Version used: $Revision: 10122 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>http://docs.greenbone.net/GSM-Manual/gos-4/en/performance.html#scan-performance</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>http://docs.greenbone.net/GSM-Manual/gos-4/en/vulnerabilitymanagement.html?highlight=scanner_plugins_timeout#general-preferences</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/CPE-T</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            CPE Inventory
+            (OID: 1.3.6.1.4.1.25623.1.0.810002)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine uses information collected by other routines about
+  CPE identities of operating systems, services and
+  applications detected during the scan.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>192.168.1.18|cpe:/o:linux:kernel</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            CPE Inventory
+                (OID: 1.3.6.1.4.1.25623.1.0.810002)
+              </p>
+<p>
+                  Version used: $Revision: 14324 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>http://cpe.mitre.org/</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/icmp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            ICMP Timestamp Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.103190)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host responded to an ICMP timestamp request.
+  The Timestamp Reply is an ICMP message which replies to a Timestamp message. It consists
+  of the originating timestamp sent by the sender of the Timestamp as well as a receive
+  timestamp and a transmit timestamp. This information could theoretically be used to
+  exploit weak time-based random number generators in other services.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><p>
+                    Vulnerability was detected according to the Vulnerability Detection Method.
+                  </p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            ICMP Timestamp Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.103190)
+              </p>
+<p>
+                  Version used: $Revision: 10411 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-1999-0524</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K15/1514, CB-K14/0632, DFN-CERT-2014-0658</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc0792.txt</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            OS Detection Consolidation and Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.105937)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script consolidates the OS information detected by several NVTs and tries to find the best matching OS.</p>
+<p>  Furthermore it reports all previously collected information leading to this best matching OS. It also reports possible additional information
+  which might help to improve the OS detection.</p>
+<p>  If any of this information is wrong or could be improved please consider to report these to the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Best matching OS:
+
+OS: Linux Kernel
+CPE: cpe:/o:linux:kernel
+Found by NVT: 1.3.6.1.4.1.25623.1.0.102002 (ICMP based OS Fingerprinting)
+Concluded from ICMP based OS fingerprint
+Setting key "Host/runs_unixoide" based on this information</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            OS Detection Consolidation and Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.105937)
+              </p>
+<p>
+                  Version used: $Revision: 14244 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<h2 id="192.168.1.4">Host 192.168.1.4</h2>
+<table>
+<tr>
+<td>Scanning of this host started at:</td>
+<td>Fri Jan 6 12:43:29 2023 UTC</td>
+</tr>
+<tr>
+<td>Number of results:</td>
+<td>4</td>
+</tr>
+</table>
+<h3>Port Summary for Host 192.168.1.4</h3>
+<table width="100%">
+<tr class="table_head">
+<td>Service (Port)</td>
+<td>Threat Level</td>
+</tr>
+<tr>
+<td>general/icmp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/CPE-T</td>
+<td>Log</td>
+</tr>
+</table>
+<h3>Security Issues for Host 192.168.1.4</h3>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Check for enabled / working Port scanner plugin
+            (OID: 1.3.6.1.4.1.25623.1.0.108323)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The script reports if:</p>
+<p>  - a custom scan configuration is in use without having a Port scanner from
+  the 'Port scanners' family enabled.</p>
+<p>  - a port scanner plugin was running into a timeout.</p>
+<p>  - a required port scanner (e.g. nmap) is not installed.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The host wasn't scanned due to the following possible reasons:
+
+ - No Port scanner plugin from the "Port scanners" family is included in this scan configuration. Recommended: Nmap (NASL wrapper).
+ - The Port scanner plugin reached a timeout during the port scanning phase. Please either choose a port range for this target containing less ports or raise the "scanner_plugins_timeout" scanner preference to a higher timeout.</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p>Based on the script output please:</p>
+<p>  - add a Port scanner plugin from the 'Port scanners' family to this scan
+  configuration. Recommended: Nmap (NASL wrapper).</p>
+<p>  - either choose a port range for this target containing less ports or raise
+  the 'scanner_plugins_timeout' scanner preference to a higher timeout.</p>
+<p>  - install the 'nmap' binary/package or make it accessible to the scanner.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Check for enabled / working Port scanner plugin
+                (OID: 1.3.6.1.4.1.25623.1.0.108323)
+              </p>
+<p>
+                  Version used: $Revision: 10122 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>http://docs.greenbone.net/GSM-Manual/gos-4/en/performance.html#scan-performance</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>http://docs.greenbone.net/GSM-Manual/gos-4/en/vulnerabilitymanagement.html?highlight=scanner_plugins_timeout#general-preferences</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/CPE-T</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            CPE Inventory
+            (OID: 1.3.6.1.4.1.25623.1.0.810002)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine uses information collected by other routines about
+  CPE identities of operating systems, services and
+  applications detected during the scan.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>192.168.1.4|cpe:/o:microsoft:windows</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            CPE Inventory
+                (OID: 1.3.6.1.4.1.25623.1.0.810002)
+              </p>
+<p>
+                  Version used: $Revision: 14324 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>http://cpe.mitre.org/</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/icmp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            ICMP Timestamp Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.103190)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host responded to an ICMP timestamp request.
+  The Timestamp Reply is an ICMP message which replies to a Timestamp message. It consists
+  of the originating timestamp sent by the sender of the Timestamp as well as a receive
+  timestamp and a transmit timestamp. This information could theoretically be used to
+  exploit weak time-based random number generators in other services.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><p>
+                    Vulnerability was detected according to the Vulnerability Detection Method.
+                  </p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            ICMP Timestamp Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.103190)
+              </p>
+<p>
+                  Version used: $Revision: 10411 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-1999-0524</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K15/1514, CB-K14/0632, DFN-CERT-2014-0658</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc0792.txt</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            OS Detection Consolidation and Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.105937)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script consolidates the OS information detected by several NVTs and tries to find the best matching OS.</p>
+<p>  Furthermore it reports all previously collected information leading to this best matching OS. It also reports possible additional information
+  which might help to improve the OS detection.</p>
+<p>  If any of this information is wrong or could be improved please consider to report these to the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Best matching OS:
+
+OS: Microsoft Windows
+CPE: cpe:/o:microsoft:windows
+Found by NVT: 1.3.6.1.4.1.25623.1.0.102002 (ICMP based OS Fingerprinting)
+Concluded from ICMP based OS fingerprint
+Setting key "Host/runs_windows" based on this information</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            OS Detection Consolidation and Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.105937)
+              </p>
+<p>
+                  Version used: $Revision: 14244 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<h2 id="192.168.1.20">Host 192.168.1.20</h2>
+<table>
+<tr>
+<td>Scanning of this host started at:</td>
+<td>Fri Jan 6 12:43:29 2023 UTC</td>
+</tr>
+<tr>
+<td>Number of results:</td>
+<td>15</td>
+</tr>
+</table>
+<h3>Port Summary for Host 192.168.1.20</h3>
+<table width="100%">
+<tr class="table_head">
+<td>Service (Port)</td>
+<td>Threat Level</td>
+</tr>
+<tr>
+<td>9390/tcp</td>
+<td>High</td>
+</tr>
+<tr>
+<td>general/CPE-T</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/tcp</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>general/icmp</td>
+<td>Log</td>
+</tr>
+</table>
+<h3>Security Issues for Host 192.168.1.20</h3>
+<div class="result_head ">
+<div class="location_float">general/CPE-T</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            CPE Inventory
+            (OID: 1.3.6.1.4.1.25623.1.0.810002)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine uses information collected by other routines about
+  CPE identities of operating systems, services and
+  applications detected during the scan.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>192.168.1.20|cpe:/a:openvas:openvas_manager:7.0
+192.168.1.20|cpe:/o:linux:kernel</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            CPE Inventory
+                (OID: 1.3.6.1.4.1.25623.1.0.810002)
+              </p>
+<p>
+                  Version used: $Revision: 14324 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>http://cpe.mitre.org/</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/icmp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            ICMP Timestamp Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.103190)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host responded to an ICMP timestamp request.
+  The Timestamp Reply is an ICMP message which replies to a Timestamp message. It consists
+  of the originating timestamp sent by the sender of the Timestamp as well as a receive
+  timestamp and a transmit timestamp. This information could theoretically be used to
+  exploit weak time-based random number generators in other services.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><p>
+                    Vulnerability was detected according to the Vulnerability Detection Method.
+                  </p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            ICMP Timestamp Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.103190)
+              </p>
+<p>
+                  Version used: $Revision: 10411 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-1999-0524</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K15/1514, CB-K14/0632, DFN-CERT-2014-0658</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc0792.txt</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head high">
+<div class="location_float">9390/tcp</div>
+<b>High</b>
+                 (CVSS: 10.0)
+              <div class="full_width">
+            NVT:
+            OpenVAS / Greenbone Vulnerability Manager Default Credentials
+            (OID: 1.3.6.1.4.1.25623.1.0.108554)
+          </div>
+</div>
+<div class="result_section">
+            Product detection result:
+            cpe:/a:openvas:openvas_manager:7.0
+            by
+            OpenVAS / Greenbone Vulnerability Manager Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.103825)
+          </div>
+<div class="result_section">
+<b>Summary</b><p>The remote OpenVAS / Greenbone Vulnerability Manager is installed/configured
+  in a way that it has account(s) with default passwords enabled.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>It was possible to login using the following credentials (username:password:role):
+
+admin:admin:Admin</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>This issue may be exploited by a remote attacker to gain access to sensitive
+  information or modify system configuration.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Workaround</p>
+<p>Change the password of the mentioned account(s).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>It was possible to login with default credentials: admin/admin,
+  sadmin/changeme, observer/observer or admin/openvas.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Try to login with default credentials via the OMP/GMP protocol.</p>
+<p>
+            Details:
+            OpenVAS / Greenbone Vulnerability Manager Default Credentials
+                (OID: 1.3.6.1.4.1.25623.1.0.108554)
+              </p>
+<p>
+                  Version used: $Revision: 13944 $</p>
+</div>
+<div class="result_section">
+<b>Product Detection Result</b><p><table>
+<tr>
+<td>Product:</td>
+<td>cpe:/a:openvas:openvas_manager:7.0</td>
+</tr>
+<tr>
+<td>Method:</td>
+<td>OpenVAS / Greenbone Vulnerability Manager Detection
+                    (OID: 1.3.6.1.4.1.25623.1.0.103825)
+                  </td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">9390/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            OpenVAS / Greenbone Vulnerability Manager Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.103825)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The script sends a connection request to the server and attempts to
+  determine if it is a OpenVAS Manager (openvasmd) or Greebone Vulnerability Manager (gmvd).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Detected OpenVAS Manager
+
+Version:  7.0
+Location: 9390/tcp
+CPE:      cpe:/a:openvas:openvas_manager:7.0
+
+Concluded from version/product identification result:
+OMP protocol version request '&lt;GET_VERSION/&gt;', response: &lt;version&gt;7.0&lt;/version&gt;</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            OpenVAS / Greenbone Vulnerability Manager Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.103825)
+              </p>
+<p>
+                  Version used: $Revision: 13874 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            OS Detection Consolidation and Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.105937)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script consolidates the OS information detected by several NVTs and tries to find the best matching OS.</p>
+<p>  Furthermore it reports all previously collected information leading to this best matching OS. It also reports possible additional information
+  which might help to improve the OS detection.</p>
+<p>  If any of this information is wrong or could be improved please consider to report these to the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Best matching OS:
+
+OS: Linux Kernel
+CPE: cpe:/o:linux:kernel
+Found by NVT: 1.3.6.1.4.1.25623.1.0.102002 (ICMP based OS Fingerprinting)
+Concluded from ICMP based OS fingerprint
+Setting key "Host/runs_unixoide" based on this information</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            OS Detection Consolidation and Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.105937)
+              </p>
+<p>
+                  Version used: $Revision: 14244 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">9390/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Service Detection with '&lt;xml/&gt;' Request
+            (OID: 1.3.6.1.4.1.25623.1.0.108198)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This plugin performs service detection.</p>
+<p>  This plugin is a complement of find_service.nasl. It sends a '&lt;xml/&gt;'
+  request to the remaining unknown services and tries to identify them.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>A OpenVAS / Greenbone Vulnerability Manager supporting the OMP/GMP protocol seems to be running on this port.</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Service Detection with '&lt;xml/&gt;' Request
+                (OID: 1.3.6.1.4.1.25623.1.0.108198)
+              </p>
+<p>
+                  Version used: $Revision: 13874 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">9390/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Services
+            (OID: 1.3.6.1.4.1.25623.1.0.10330)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>A TLScustom server answered on this port</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Services
+                (OID: 1.3.6.1.4.1.25623.1.0.10330)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head medium">
+<div class="location_float">9390/tcp</div>
+<b>Medium</b>
+                 (CVSS: 5.0)
+              <div class="full_width">
+            NVT:
+            SSL/TLS: Certificate Expired
+            (OID: 1.3.6.1.4.1.25623.1.0.103955)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote server's SSL/TLS certificate has already expired.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The certificate of the remote service expired on 2020-08-20 19:18:24.
+
+Certificate details:
+subject ...: C=DE,L=Osnabrueck,O=OpenVAS Users,CN=218ffb30ff7a
+subject alternative names (SAN):
+None
+issued by .: C=DE,L=Osnabrueck,O=OpenVAS Users,OU=Certificate Authority for 218ffb30ff7a
+serial ....: 5B7C65801F8422EBBDAD2299
+valid from : 2018-08-21 19:18:24 UTC
+valid until: 2020-08-20 19:18:24 UTC
+fingerprint (SHA-1): 6B34D170BC2D0EAE4DB2D6122E2DA7E94F0ADF6F
+fingerprint (SHA-256): A672ACF69BB0944271599E210BF04BF20736E3CCB5862FAF3EFAC987241BC4B9</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Replace the SSL/TLS certificate by a new one.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>This script checks expiry dates of certificates associated with
+  SSL/TLS-enabled services on the target and reports whether any have already expired.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            SSL/TLS: Certificate Expired
+                (OID: 1.3.6.1.4.1.25623.1.0.103955)
+              </p>
+<p>
+                  Version used: $Revision: 11103 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">9390/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SSL/TLS: Collect and Report Certificate Details
+            (OID: 1.3.6.1.4.1.25623.1.0.103692)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script collects and reports the details of all SSL/TLS certificates.</p>
+<p>  This data will be used by other tests to verify server certificates.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The following certificate details of the remote service were collected.
+
+Certificate details:
+subject ...: C=DE,L=Osnabrueck,O=OpenVAS Users,CN=218ffb30ff7a
+subject alternative names (SAN):
+None
+issued by .: C=DE,L=Osnabrueck,O=OpenVAS Users,OU=Certificate Authority for 218ffb30ff7a
+serial ....: 5B7C65801F8422EBBDAD2299
+valid from : 2018-08-21 19:18:24 UTC
+valid until: 2020-08-20 19:18:24 UTC
+fingerprint (SHA-1): 6B34D170BC2D0EAE4DB2D6122E2DA7E94F0ADF6F
+fingerprint (SHA-256): A672ACF69BB0944271599E210BF04BF20736E3CCB5862FAF3EFAC987241BC4B9</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SSL/TLS: Collect and Report Certificate Details
+                (OID: 1.3.6.1.4.1.25623.1.0.103692)
+              </p>
+<p>
+                  Version used: $Revision: 13434 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">9390/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SSL/TLS: Perfect Forward Secrecy Cipher Suites Missing
+            (OID: 1.3.6.1.4.1.25623.1.0.105092)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote service is missing support for SSL/TLS cipher suites supporting Perfect Forward Secrecy.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The remote service does not support perfect forward secrecy cipher suites.</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SSL/TLS: Perfect Forward Secrecy Cipher Suites Missing
+                (OID: 1.3.6.1.4.1.25623.1.0.105092)
+              </p>
+<p>
+                  Version used: $Revision: 4736 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">9390/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SSL/TLS: Report Medium Cipher Suites
+            (OID: 1.3.6.1.4.1.25623.1.0.902816)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine reports all Medium SSL/TLS cipher suites accepted by a service.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>'Medium' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+
+'Medium' cipher suites accepted by this service via the TLSv1.1 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+
+'Medium' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_CCM
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_256_CCM
+TLS_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256
+TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256
+TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384</pre>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>Any cipher suite considered to be secure for only the next 10 years is considered as medium</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SSL/TLS: Report Medium Cipher Suites
+                (OID: 1.3.6.1.4.1.25623.1.0.902816)
+              </p>
+<p>
+                  Version used: $Revision: 4743 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">9390/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SSL/TLS: Report Non Weak Cipher Suites
+            (OID: 1.3.6.1.4.1.25623.1.0.103441)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine reports all Non Weak SSL/TLS cipher suites accepted by a service.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>'Non Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+
+'Non Weak' cipher suites accepted by this service via the TLSv1.1 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+
+'Non Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_CCM
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_256_CCM
+TLS_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256
+TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256
+TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SSL/TLS: Report Non Weak Cipher Suites
+                (OID: 1.3.6.1.4.1.25623.1.0.103441)
+              </p>
+<p>
+                  Version used: $Revision: 4736 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">9390/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SSL/TLS: Report Supported Cipher Suites
+            (OID: 1.3.6.1.4.1.25623.1.0.802067)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine reports all SSL/TLS cipher suites accepted by a service.</p>
+<p>  As the NVT 'SSL/TLS: Check Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0.900234) might run into a
+  timeout the actual reporting of all accepted cipher suites takes place in this NVT instead. The script preference 'Report timeout'
+  allows you to configure if such an timeout is reported.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>No 'Strong' cipher suites accepted by this service via the TLSv1.0 protocol.
+
+'Medium' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+
+No 'Weak' cipher suites accepted by this service via the TLSv1.0 protocol.
+
+No 'Null' cipher suites accepted by this service via the TLSv1.0 protocol.
+
+No 'Anonymous' cipher suites accepted by this service via the TLSv1.0 protocol.
+
+No 'Strong' cipher suites accepted by this service via the TLSv1.1 protocol.
+
+'Medium' cipher suites accepted by this service via the TLSv1.1 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+
+No 'Weak' cipher suites accepted by this service via the TLSv1.1 protocol.
+
+No 'Null' cipher suites accepted by this service via the TLSv1.1 protocol.
+
+No 'Anonymous' cipher suites accepted by this service via the TLSv1.1 protocol.
+
+No 'Strong' cipher suites accepted by this service via the TLSv1.2 protocol.
+
+'Medium' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_CCM
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_256_CCM
+TLS_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256
+TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256
+TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384
+
+No 'Weak' cipher suites accepted by this service via the TLSv1.2 protocol.
+
+No 'Null' cipher suites accepted by this service via the TLSv1.2 protocol.
+
+No 'Anonymous' cipher suites accepted by this service via the TLSv1.2 protocol.</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SSL/TLS: Report Supported Cipher Suites
+                (OID: 1.3.6.1.4.1.25623.1.0.802067)
+              </p>
+<p>
+                  Version used: $Revision: 11108 $</p>
+</div>
+<div class="result_head low">
+<div class="location_float">general/tcp</div>
+<b>Low</b>
+                 (CVSS: 2.6)
+              <div class="full_width">
+            NVT:
+            TCP timestamps
+            (OID: 1.3.6.1.4.1.25623.1.0.80091)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host implements TCP timestamps and therefore allows to compute
+  the uptime.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>It was detected that the host implements RFC1323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 3173060305
+Packet 2: 3173061397</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>To disable TCP timestamps on linux add the line 'net.ipv4.tcp_timestamps = 0' to
+  /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at runtime.</p>
+<p>  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'</p>
+<p>  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.</p>
+<p>  The default behavior of the TCP/IP stack on this Systems is to not use the
+  Timestamp options when initiating TCP connections, but use them if the TCP peer
+  that is initiating communication includes them in their synchronize (SYN) segment.</p>
+<p>  See the references for more information.</p>
+</div>
+<div class="result_section">
+<b>Affected Software/OS</b><p>TCP/IPv4 implementations that implement RFC1323.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>The remote host implements TCP timestamps, as defined by RFC1323.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Special IP packets are forged and sent with a little delay in between to the
+  target IP. The responses are searched for a timestamps. If found, the timestamps are reported.</p>
+<p>
+            Details:
+            TCP timestamps
+                (OID: 1.3.6.1.4.1.25623.1.0.80091)
+              </p>
+<p>
+                  Version used: $Revision: 14310 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc1323.txt</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>http://www.microsoft.com/en-us/download/details.aspx?id=9152</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Traceroute
+            (OID: 1.3.6.1.4.1.25623.1.0.51662)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>A traceroute from the scanning server to the target system was
+  conducted. This traceroute is provided primarily for informational value only. In the vast
+  majority of cases, it does not represent a vulnerability. However, if the displayed traceroute
+  contains any private addresses that should not have been publicly visible, then you have an
+  issue you need to correct.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Here is the route from 172.17.0.2 to 192.168.1.20:
+
+172.17.0.2
+192.168.1.20</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p>Block unwanted packets from escaping your network.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Traceroute
+                (OID: 1.3.6.1.4.1.25623.1.0.51662)
+              </p>
+<p>
+                  Version used: $Revision: 10411 $</p>
+</div>
+<h2 id="192.168.1.5">Host 192.168.1.5</h2>
+<table>
+<tr>
+<td>Scanning of this host started at:</td>
+<td>Fri Jan 6 12:43:29 2023 UTC</td>
+</tr>
+<tr>
+<td>Number of results:</td>
+<td>12</td>
+</tr>
+</table>
+<h3>Port Summary for Host 192.168.1.5</h3>
+<table width="100%">
+<tr class="table_head">
+<td>Service (Port)</td>
+<td>Threat Level</td>
+</tr>
+<tr>
+<td>general/icmp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>1433/tcp</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>135/tcp</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>general/tcp</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>445/tcp</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/CPE-T</td>
+<td>Log</td>
+</tr>
+<tr>
+<td>general/SMBClient</td>
+<td>Log</td>
+</tr>
+</table>
+<h3>Security Issues for Host 192.168.1.5</h3>
+<div class="result_head ">
+<div class="location_float">general/CPE-T</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            CPE Inventory
+            (OID: 1.3.6.1.4.1.25623.1.0.810002)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine uses information collected by other routines about
+  CPE identities of operating systems, services and
+  applications detected during the scan.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>192.168.1.5|cpe:/a:microsoft:sql_server:13.0.4259.0
+192.168.1.5|cpe:/o:microsoft:windows</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            CPE Inventory
+                (OID: 1.3.6.1.4.1.25623.1.0.810002)
+              </p>
+<p>
+                  Version used: $Revision: 14324 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>http://cpe.mitre.org/</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">135/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            DCE/RPC and MSRPC Services Enumeration
+            (OID: 1.3.6.1.4.1.25623.1.0.108044)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Distributed Computing Environment / Remote Procedure Calls (DCE/RPC) or MSRPC services running
+  on the remote host can be enumerated by connecting on port 135 and doing the appropriate queries.</p>
+<p>  The actual reporting takes place in the NVT 'DCE/RPC and MSRPC Services Enumeration Reporting'
+  (OID: 1.3.6.1.4.1.25623.1.0.10736)</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>A DCE endpoint resolution service seems to be running on this port.</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker may use this fact to gain more knowledge
+  about the remote host.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Filter incoming traffic to this port.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            DCE/RPC and MSRPC Services Enumeration
+                (OID: 1.3.6.1.4.1.25623.1.0.108044)
+              </p>
+<p>
+                  Version used: $Revision: 11885 $</p>
+</div>
+<div class="result_head medium">
+<div class="location_float">135/tcp</div>
+<b>Medium</b>
+                 (CVSS: 5.0)
+              <div class="full_width">
+            NVT:
+            DCE/RPC and MSRPC Services Enumeration Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.10736)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Distributed Computing Environment / Remote Procedure Calls (DCE/RPC) or MSRPC services running
+  on the remote host can be enumerated by connecting on port 135 and doing the appropriate queries.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Here is the list of DCE/RPC or MSRPC services running on this host via the TCP protocol:
+
+Port: 49664/tcp
+
+     UUID: d95afe70-a6d5-4259-822e-2c84da1ddb0d, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49664]
+
+Port: 49665/tcp
+
+     UUID: f6beaff7-1e19-4fbb-9f8f-b89e2018337c, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49665]
+     Annotation: Event log TCPIP
+
+Port: 49666/tcp
+
+     UUID: 0b1c2170-5732-4e0e-8cd3-d9b16f3b84d7, version 0
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49666]
+     Annotation: RemoteAccessCheck
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ac, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49666]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : SAM access
+
+     UUID: 51a227ae-825b-41f2-b4a9-1ac9557a1018, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49666]
+     Annotation: Ngc Pop Key Service
+
+     UUID: 8fb74744-b2ff-4c00-be0d-9ef9a191fe1b, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49666]
+     Annotation: Ngc Pop Key Service
+
+     UUID: b25a52bf-e5dd-4f4a-aea6-8ca7272a0e86, version 2
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49666]
+     Annotation: KeyIso
+
+Port: 49667/tcp
+
+     UUID: 0d3c7f20-1c8d-4654-a1b3-51563b298bda, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49667]
+     Annotation: UserMgrCli
+
+     UUID: 2e6035b2-e8f1-41a7-a044-656b439c4c34, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49667]
+     Annotation: Proxy Manager provider server endpoint
+
+     UUID: 3a9ef155-691d-4449-8d05-09ad57031823, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49667]
+
+     UUID: 552d076a-cb29-4e44-8b6a-d15e59e2c0af, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49667]
+     Annotation: IP Transition Configuration endpoint
+
+     UUID: 86d35949-83c9-4044-b424-db363231fd0c, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49667]
+
+     UUID: b18fbab6-56f8-4702-84e0-41053293a869, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49667]
+     Annotation: UserMgrCli
+
+     UUID: c36be077-e14b-4fe9-8abc-e856ef4f048b, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49667]
+     Annotation: Proxy Manager client server endpoint
+
+     UUID: c49a5a70-8a7f-4e70-ba16-1e8f1f193ef1, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49667]
+     Annotation: Adh APIs
+
+Port: 49668/tcp
+
+     UUID: 0b1c2170-5732-4e0e-8cd3-d9b16f3b84d7, version 0
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49668]
+     Annotation: RemoteAccessCheck
+
+     UUID: 51a227ae-825b-41f2-b4a9-1ac9557a1018, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49668]
+     Annotation: Ngc Pop Key Service
+
+     UUID: 8fb74744-b2ff-4c00-be0d-9ef9a191fe1b, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49668]
+     Annotation: Ngc Pop Key Service
+
+     UUID: b25a52bf-e5dd-4f4a-aea6-8ca7272a0e86, version 2
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49668]
+     Annotation: KeyIso
+
+Port: 49669/tcp
+
+     UUID: 0b6edbfa-4a24-4fc6-8a23-942b1eca65d1, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49669]
+
+     UUID: 12345678-1234-abcd-ef00-0123456789ab, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49669]
+     Named pipe : spoolss
+     Win32 service or process : spoolsv.exe
+     Description : Spooler service
+
+     UUID: 4a452661-8290-4b36-8fbe-7f4093a94978, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49669]
+
+     UUID: 76f03f96-cdfd-44fc-a22c-64950a001209, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49669]
+
+     UUID: ae33069b-a2a8-46ee-a235-ddfd339be281, version 1
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49669]
+
+Port: 49670/tcp
+
+     UUID: 367abb81-9844-35f1-ad32-98f038001003, version 2
+     Endpoint: ncacn_ip_tcp:192.168.1.5[49670]
+
+Note: DCE/RPC or MSRPC services running on this host locally were identified. Reporting this list is not enabled by default due to the possible large size of this list. See the script preferences to enable this reporting.</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker may use this fact to gain more knowledge
+  about the remote host.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Filter incoming traffic to this ports.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            DCE/RPC and MSRPC Services Enumeration Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.10736)
+              </p>
+<p>
+                  Version used: $Revision: 6319 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/icmp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            ICMP Timestamp Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.103190)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host responded to an ICMP timestamp request.
+  The Timestamp Reply is an ICMP message which replies to a Timestamp message. It consists
+  of the originating timestamp sent by the sender of the Timestamp as well as a receive
+  timestamp and a transmit timestamp. This information could theoretically be used to
+  exploit weak time-based random number generators in other services.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><p>
+                    Vulnerability was detected according to the Vulnerability Detection Method.
+                  </p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            ICMP Timestamp Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.103190)
+              </p>
+<p>
+                  Version used: $Revision: 10411 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-1999-0524</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K15/1514, CB-K14/0632, DFN-CERT-2014-0658</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc0792.txt</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">1433/tcp</div>
+<b>Medium</b>
+                 (CVSS: 5.0)
+              <div class="full_width">
+            NVT:
+            Microsoft SQL Server 2016 Information Disclosure Vulnerability-KB4019095 (Remot...
+                
+            (OID: 1.3.6.1.4.1.25623.1.0.811292)
+          </div>
+</div>
+<div class="result_section">
+            Product detection result:
+            cpe:/a:microsoft:sql_server:13.0.4259.0
+            by
+            Microsoft SQL TCP/IP listener is running
+            (OID: 1.3.6.1.4.1.25623.1.0.10144)
+          </div>
+<div class="result_section">
+<b>Summary</b><p>This host is missing an important security
+  update according to Microsoft KB4019095</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Vulnerable range: 13.0.2000.0 - 13.0.4445.0</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>Successful exploitation will allow an attacker
+  to gain access to sensitive information and access to an affected SQL server
+  database.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>VendorFix</p>
+<p>Run Windows Update and update the
+  listed hotfixes or download and update mentioned hotfixes in the advisory</p>
+</div>
+<div class="result_section">
+<b>Affected Software/OS</b><p>Microsoft SQL Server 2016 x64 Service Pack 1 (CU)</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>The flaw exists due to error in Microsoft
+  SQL Server Analysis Services when it improperly enforces permissions.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Checks if a vulnerable version is present on the target host.</p>
+<p>
+            Details:
+            <abbr title="Microsoft SQL Server 2016 Information Disclosure Vulnerability-KB4019095 (Remote) (1.3.6.1.4.1.25623.1.0.811292)">Microsoft SQL Server 2016 Information Disclosure Vulnerability-KB4019095 (Remot...</abbr>
+                (OID: 1.3.6.1.4.1.25623.1.0.811292)
+              </p>
+<p>
+                  Version used: $Revision: 11816 $</p>
+</div>
+<div class="result_section">
+<b>Product Detection Result</b><p><table>
+<tr>
+<td>Product:</td>
+<td>cpe:/a:microsoft:sql_server:13.0.4259.0</td>
+</tr>
+<tr>
+<td>Method:</td>
+<td>Microsoft SQL TCP/IP listener is running
+                    (OID: 1.3.6.1.4.1.25623.1.0.10144)
+                  </td>
+</tr>
+</table></p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-2017-8516</td>
+</tr>
+<tr valign="top">
+<td>BID:</td>
+<td>100041</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K17/1338, DFN-CERT-2017-1399</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>https://support.microsoft.com/en-us/help/4019095</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://support.microsoft.com/en-us/help/4019095</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">1433/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Microsoft SQL TCP/IP listener is running
+            (OID: 1.3.6.1.4.1.25623.1.0.10144)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Microsoft SQL server is running on this port.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Detected Microsoft SQL Server 2016
+
+Version:  13.0.4259.0
+Location: 1433/tcp
+CPE:      cpe:/a:microsoft:sql_server:13.0.4259.0</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Microsoft SQL TCP/IP listener is running
+                (OID: 1.3.6.1.4.1.25623.1.0.10144)
+              </p>
+<p>
+                  Version used: $Revision: 10911 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            OS Detection Consolidation and Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.105937)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script consolidates the OS information detected by several NVTs and tries to find the best matching OS.</p>
+<p>  Furthermore it reports all previously collected information leading to this best matching OS. It also reports possible additional information
+  which might help to improve the OS detection.</p>
+<p>  If any of this information is wrong or could be improved please consider to report these to the referenced community portal.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Best matching OS:
+
+OS: Microsoft Windows
+CPE: cpe:/o:microsoft:windows
+Found by NVT: 1.3.6.1.4.1.25623.1.0.10144 (Microsoft SQL TCP/IP listener is running)
+Setting key "Host/runs_windows" based on this information
+
+Other OS detections (in order of reliability):
+
+OS: Microsoft Windows
+CPE: cpe:/o:microsoft:windows
+Found by NVT: 1.3.6.1.4.1.25623.1.0.108044 (DCE/RPC and MSRPC Services Enumeration)
+Concluded from DCE/RPC and MSRPC Services Enumeration on port 135/tcp</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            OS Detection Consolidation and Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.105937)
+              </p>
+<p>
+                  Version used: $Revision: 14244 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://community.greenbone.net/c/vulnerability-tests</td>
+</tr></table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">445/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SMB Remote Version Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.807830)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Detection of Server Message Block(SMB).</p>
+<p>  This script sends SMB Negotiation request and try to get the version from the
+  response.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>SMBv1 and SMBv2 are enabled on remote target</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SMB Remote Version Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.807830)
+              </p>
+<p>
+                  Version used: $Revision: 10898 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/SMBClient</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SMB Test with 'smbclient'
+            (OID: 1.3.6.1.4.1.25623.1.0.90011)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script reports information about the SMB server of the remote host
+  collected with the 'smbclient' tool.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Error getting SMB-Data -&gt; SESSION SETUP FAILED: NT_STATUS_ACCESS_DENIED</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SMB Test with 'smbclient'
+                (OID: 1.3.6.1.4.1.25623.1.0.90011)
+              </p>
+<p>
+                  Version used: $Revision: 13274 $</p>
+</div>
+<div class="result_head ">
+<div class="location_float">445/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            SMB/CIFS Server Detection
+            (OID: 1.3.6.1.4.1.25623.1.0.11011)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This script detects whether port 445 and 139 are open and
+  if they are running a CIFS/SMB server.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>A CIFS server is running on this port</pre>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            SMB/CIFS Server Detection
+                (OID: 1.3.6.1.4.1.25623.1.0.11011)
+              </p>
+<p>
+                  Version used: $Revision: 13541 $</p>
+</div>
+<div class="result_head low">
+<div class="location_float">general/tcp</div>
+<b>Low</b>
+                 (CVSS: 2.6)
+              <div class="full_width">
+            NVT:
+            TCP timestamps
+            (OID: 1.3.6.1.4.1.25623.1.0.80091)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host implements TCP timestamps and therefore allows to compute
+  the uptime.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>It was detected that the host implements RFC1323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 2591868134
+Packet 2: 2591869230</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>To disable TCP timestamps on linux add the line 'net.ipv4.tcp_timestamps = 0' to
+  /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at runtime.</p>
+<p>  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'</p>
+<p>  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.</p>
+<p>  The default behavior of the TCP/IP stack on this Systems is to not use the
+  Timestamp options when initiating TCP connections, but use them if the TCP peer
+  that is initiating communication includes them in their synchronize (SYN) segment.</p>
+<p>  See the references for more information.</p>
+</div>
+<div class="result_section">
+<b>Affected Software/OS</b><p>TCP/IPv4 implementations that implement RFC1323.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>The remote host implements TCP timestamps, as defined by RFC1323.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Special IP packets are forged and sent with a little delay in between to the
+  target IP. The responses are searched for a timestamps. If found, the timestamps are reported.</p>
+<p>
+            Details:
+            TCP timestamps
+                (OID: 1.3.6.1.4.1.25623.1.0.80091)
+              </p>
+<p>
+                  Version used: $Revision: 14310 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc1323.txt</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>http://www.microsoft.com/en-us/download/details.aspx?id=9152</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head ">
+<div class="location_float">general/tcp</div>
+<b>Log</b>
+                 (CVSS: 0.0)
+              <div class="full_width">
+            NVT:
+            Traceroute
+            (OID: 1.3.6.1.4.1.25623.1.0.51662)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>A traceroute from the scanning server to the target system was
+  conducted. This traceroute is provided primarily for informational value only. In the vast
+  majority of cases, it does not represent a vulnerability. However, if the displayed traceroute
+  contains any private addresses that should not have been publicly visible, then you have an
+  issue you need to correct.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Here is the route from 172.17.0.2 to 192.168.1.5:
+
+172.17.0.2
+192.168.1.5</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p>Block unwanted packets from escaping your network.</p>
+</div>
+<div class="result_section">
+<b>Log Method</b><p>
+            Details:
+            Traceroute
+                (OID: 1.3.6.1.4.1.25623.1.0.51662)
+              </p>
+<p>
+                  Version used: $Revision: 10411 $</p>
+</div>
+<div class="footer">
+                  This file was automatically generated.
+                </div>
+</div></body>
+</html>

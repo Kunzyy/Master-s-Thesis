@@ -1,0 +1,37 @@
+{% extends 'checkUser.html' %}
+{% load static %}
+{% block title %}
+    Planning confirmation
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let interval1 = setInterval( function () {
+                ajaxRequest(
+                    "test",
+                    function(){
+                        clearInterval(interval1);
+                    }
+                );
+            }, 2000);
+        });
+    </script>
+
+{% endblock %}
+
+{% block contentUser %}
+    <input type="hidden" id="settings" value="{{ settings }}">
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Planning phase</h1>
+            <p>Here is the planning phase ! </p>
+        </div>
+    </div>
+    {{ res }}
+    <!-- Future evolution, suggest multiple interfaces-->
+    <form method="post" action="{% url 'Home' %}">
+        {% csrf_token %}
+    </form>
+{% endblock %}
+

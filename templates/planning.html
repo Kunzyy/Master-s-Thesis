@@ -1,0 +1,124 @@
+{% extends 'checkUser.html' %}
+{% load static %}
+{% block title %}
+    Planning
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/switch.css' %}">
+{% endblock %}
+
+{% block js %}
+<script>
+
+    $(document).ready(function(){
+        let targetNetwork = document.getElementById("targetNetwork");
+        targetNetwork.innerHTML = 'Target network : &nbsp' + getHtmlForNetwork(0)
+    });
+
+    function getSelectForIp(counter, index){
+        let selectForIp = '<select name="ip_'+counter+'_'+index+'" required>';
+        selectForIp += '<option selected disabled value="">-</option>';
+        for(let i=0; i<256;i++){
+            selectForIp += '<option value="'+i+'">'+i+'</option>';
+        }
+        selectForIp += '</select>';
+        return selectForIp;
+    }
+
+    function getHtmlForNetwork(counter){
+        let selectForNetmask = '<select name="netmask_'+counter+'">';
+        for(let i=0; i<32;i++){
+            selectForNetmask += '<option value="'+i+'">'+i+'</option>';
+        }
+        selectForNetmask += '<option value="32" selected>32</option></select>';
+        return getSelectForIp(counter,1) + ' . ' +  getSelectForIp(counter,2) + ' . ' + getSelectForIp(counter,3) + ' . ' + getSelectForIp(counter,4) + ' / ' + selectForNetmask;
+    }
+
+    let counter = 0;
+    function addExtraRange() {
+        counter++;
+        document.getElementById("IpRanges").innerHTML += '' +
+            '<label>IP range n°' + counter + ' : </label>&nbsp' +
+            getHtmlForNetwork(counter) +
+            '<br><br>'
+        document.getElementById("counter").value = counter;
+    }
+    
+    function checkBoxListener(){
+        let form = document.getElementById("formBanIp");
+        if (document.getElementById("banIp").checked){
+            form.style.display = "block";
+            addExtraRange();
+        } else {
+            form.style.display = "none";
+            counter = 1
+            document.getElementById("IpRanges").innerHTML = '';
+        }
+    }
+    
+    function switchListener(){
+        let form = document.getElementById("formStaticIp");
+        let ip = document.getElementById("formIp")
+        if (document.getElementById("ip_type").checked){
+            form.style.display = "block";
+            ip.innerHTML = 'Please speficy a static IP address in order to perform the pentesting : &nbsp' + getSelectForIp("static",1) + ' . ' +  getSelectForIp("static",2) + ' . ' + getSelectForIp("static",3) + ' . ' + getSelectForIp("static",4) + '<br><br>';
+        } else {
+            form.style.display = "none";
+        }
+    }
+
+</script>
+{% endblock %}
+
+{% block contentUser %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Planning phase</h1>
+            <p>Here is the planning phase ! </p>
+        </div>
+    </div>
+
+    <!-- Future evolution, suggest multiple interfaces-->
+    <form method="post" action="{% url 'planningConfirm' %}">
+        {% csrf_token %}
+        <h3>Choose the network </h3>
+        <select name="interface" required>
+            <option disabled selected>Select interface</option>
+            {% for item in interfaces %}
+                <option value="{{ item }}">{{ item }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <h3>Define the target network by :</h3><br>
+        DHCP &nbsp
+        <label class="switch">
+            <input type="hidden" name="ip_type" value="dhcp">
+            <input type="checkbox" id="ip_type" name="ip_type" value="static_ip" onclick="switchListener()">
+            <span class="slider round"></span>
+        </label>
+        &nbsp Static IP Address<br><br>
+        <div id="formStaticIp" style="display:none;">
+        <div id="formIp"></div>
+        </div>
+        <div id="targetNetwork"></div>
+        <br>
+        <hr>
+        <br>
+        <label for="banIp">Exclude specific IP addresses : </label>
+        <input type="checkbox" id="banIp" onclick="checkBoxListener()">
+        <div id="formBanIp" style="display: none">
+            <hr>
+            <input type="button" value="Add IP range" style="width: available" onclick="addExtraRange()">
+            <br><br>
+            <label for="IpRanges">IP Ranges to exclude : </label>
+            <br><br>
+            <div id="IpRanges"></div>
+        </div>
+            <br><br><br>
+        <input type="hidden" id="counter" name="counter" value="0">
+        <input type="text" name="password" placeholder="Sudo password">
+        <input type="submit" class="button" value="Next">
+    </form>
+{% endblock %}
+

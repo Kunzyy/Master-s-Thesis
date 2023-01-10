@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if user.is_authenticated %}
+    {% block contentUser %}
+    {% endblock %}
+{% else %}
+    <h2>Please login first before starting</h2>
+    <br>
+    <a href="{% url 'login' %}">---> Login</a> <br>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'checkUser.html' %}
+{% load static %}
+{% block title %}
+    Planning confirmation
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+    $(document).ready(function () {
+                ajaxRequest(
+                    "parseXMLOpenvasToMSF",
+                    function(){
+                        console.log('MSF launched');
+                    }
+                );
+        });
+    </script>
+{% endblock %}
+
+{% block contentUser %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Attack phase</h1>
+            <p>Here is the attack phase ! </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-5 jumbotron">
+            <h2>Metasploit</h2><br>
+            <p>"Inputs"</p>
+            <p><a class="btn btn-secondary" href="{% url 'attack' %}" role="button" onclick="">Launch Parsing and Msf &raquo;</a></p>
+            <hr>
+            <p>"Outputs : <br>{{ msfconsoleOutput }}"</p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 jumbotron">
+            <h2>SQL Map</h2><br>
+            <hr>
+        </div>
+    </div>
+{% endblock %}

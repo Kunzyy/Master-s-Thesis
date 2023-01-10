@@ -1,0 +1,9 @@
+FROM kalilinux/kali-rolling
+
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y metasploit-framework
+RUN mkdir rcFiles && mkdir rcFiles/tmp
+COPY msf.sh /rcFiles
+COPY test.rc /rcFiles
+COPY runExploit.py /rcFiles
+

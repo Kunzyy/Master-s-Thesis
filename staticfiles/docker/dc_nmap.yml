@@ -1,0 +1,7 @@
+services:
+  monapp:
+    environment:
+    - NOM=Kuntz
+    - AGE=24
+    image: test
+version: '3'

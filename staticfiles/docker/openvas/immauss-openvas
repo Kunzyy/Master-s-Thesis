@@ -1,0 +1,9 @@
+FROM immauss/openvas:22.4.06
+
+RUN apt-get update && apt-get upgrade -y
+RUN mkdir /openvas && mkdir /openvas/reports
+RUN pip install python-gvm
+ENV PASSWORD=cyber2023
+COPY startTask.py /openvas/
+
+EXPOSE 9392 9390

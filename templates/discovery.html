@@ -1,0 +1,97 @@
+{% extends 'checkUser.html' %}
+{% load static %}
+{% block title %}
+    Planning confirmation
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+        if(document.getElementById("openvas_status").value === "healthy"){
+            document.getElementById("launchButton").disabled = false;
+        } else {
+            document.getElementById("launchButton").disabled = true;
+        }
+
+        /*let interval1 = setInterval( function () {
+                ajaxRequest(
+                    "",
+                    function(data){
+                    }
+                );
+            }, 5000);*/
+    });
+
+    document.getElementById("launchButton").onclick = function() {};
+
+    let sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+
+    let restartOpenvas = async function () {
+        document.getElementById("restartButton").disabled = true;
+        document.getElementById("restartButton").innerHTML = "Restarting...";
+        ajaxRequest('restartOpenvas', function () {
+        });
+        await sleep(10000);
+        location.reload();
+    }
+    </script>
+{% endblock %}
+
+{% block contentUser %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Discovery phase</h1>
+            <p>Here is the discovery phase ! </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <form method="post" action={% url 'discovery' %}>
+    {% csrf_token %}
+    <input name="task_name" type="text" placeholder="Task name">
+    <input type="submit" value="Create task">
+    </form>
+    <hr>
+    <input id="task_name" type="hidden" value="{{ task_name }}">
+    <input id="target_network" type="hidden" value="{{ target_network }}">
+    Task name = {{ task_name }}<br>
+    Target network = {{ target_network }}
+    <br>
+    <br>
+    <hr>
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-5 jumbotron">
+            <h2>Nmap test</h2><br>
+            <p>"Inputs"</p>
+            <form method="post" action="{% url 'discovery' %}">
+                {% csrf_token %}
+                <input type="hidden" name="nMap" value="Kuntz">
+                <input class="btn btn-secondary" type="submit" value="Launch nMap &raquo;">
+            </form>
+            <hr>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 jumbotron">
+            <h2>OpenVas</h2><br>
+            <hr>
+            <form method="post" action="{% url 'discovery' %}">
+                {% csrf_token %}
+                <input type="submit" class="btn btn-secondary" id="launchButton" name="startOpenvasTask" value="Launch scanner&raquo;">
+            </form>
+            <br>
+            <br>
+            <label>Openvas task status : {{ openvas_task_status }}</label>
+            <br>
+            <hr>
+            <h5>Server status : {{ openvas_status }}</h5>
+            <input id="openvas_status" type="hidden" value="{{ openvas_status }}">
+            <button id="restartButton" class="btn btn-secondary" role="button" onclick="restartOpenvas()">Restart server&raquo;</button>
+        </div>
+
+    </div>
+{% endblock %}

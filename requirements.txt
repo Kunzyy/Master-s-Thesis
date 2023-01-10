@@ -1,0 +1,8 @@
+django
+djangoajax
+django-background-tasks
+PyYAML
+netifaces
+docker
+python-gvm
+xmltodict
